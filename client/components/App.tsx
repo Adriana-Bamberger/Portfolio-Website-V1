@@ -1,7 +1,24 @@
+//Imports
 import HeaderBar from './HeaderBar'
-//This rendors my mainpage.
+import ExprienceBox from './ExperienceBox'
+import ProjectsBox from './ProjectsBox'
+import AboutBox from './AboutBox'
+import SkillsBox from './SkillsBox'
+import Footer from './Footer'
+import HeroBox from './HeroBox'
+//This rendors the whole page
 function App() {
-  return <HeaderBar />
+  return (
+    <>
+      <HeaderBar />
+      <HeroBox />
+      <AboutBox />
+      <ProjectsBox />
+      <ExprienceBox />
+      <SkillsBox />
+      <Footer />
+    </>
+  )
 }
 
 export default App

@@ -1,0 +1,66 @@
+body {
+  background-color: #454343;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  font-size: x-large;
+  margin: 1%;
+  border-radius: 30px;
+
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-top: 0.3%;
+}
+
+.dark-box {
+  background-color: #b3b3b3;
+  margin: 1%;
+  border-radius: 30px;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-top: 0.3%;
+}
+
+.light-box {
+  background-color: #e6e6e6;
+  margin: 1%;
+  border-radius: 30px;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-top: 0.3%;
+}
+
+.white-box {
+  background-color: #e6e6e6;
+  margin: 1%;
+  border-radius: 30px;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-top: 0.3%;
+}
+
+.border-button {
+
+}
+
+.solid-button {
+
+}
+
+.project-box {
+  margin: 1%;
+  border-radius: 30px;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-top: 0.3%;
+}
+
+.pink-project{
+  @extend .project-box;
+}
