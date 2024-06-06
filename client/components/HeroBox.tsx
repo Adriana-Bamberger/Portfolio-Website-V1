@@ -2,7 +2,7 @@
 function HeroBox() {
   return (
     <>
-      <div className="dark-box">
+      <div className="box-to-glow glow">
         <h1>Heya!</h1>
         <p>
           A buch of text will go here, Were talkign only a sentace about this

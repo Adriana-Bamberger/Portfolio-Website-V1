@@ -1,6 +1,24 @@
+:root {
+  // Glow Pride Rainbow colors
+  --clr-1: #E40303;
+  --clr-2: #FF8C00;
+  --clr-3: #FFED00;
+  --clr-4: #008026;
+  --clr-5: #24408E;
+  --clr-6: #732982;
+  // Background
+  --clr-7: #454343;
+  // Dark Grey
+  --clr-8: #b3b3b3;
+  // Light Grey
+  --clr-9: #e6e6e6;
+  // White
+  --clr-10: #ffffff;
+
+}
 body {
-  background-color: #454343;
-  color: #ffffff;
+  background-color: var(--clr-7);
+  color: var(--clr-10);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -15,7 +33,7 @@ body {
 }
 
 .dark-box {
-  background-color: #b3b3b3;
+  background-color: var(--clr-8);
   margin: 1%;
   border-radius: 30px;
   padding-left: 1%;
@@ -25,7 +43,7 @@ body {
 }
 
 .light-box {
-  background-color: #e6e6e6;
+  background-color: var(--clr-9);
   margin: 1%;
   border-radius: 30px;
   padding-left: 1%;
@@ -35,7 +53,7 @@ body {
 }
 
 .white-box {
-  background-color: #e6e6e6;
+  background-color: var(--clr-9);
   margin: 1%;
   border-radius: 30px;
   padding-left: 1%;
@@ -63,4 +81,41 @@ body {
 
 .pink-project{
   @extend .project-box;
+}
+// Working on making things GLOW
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes rotation {
+  0% {--gradient-angle: 0deg; }
+  10% { --gradient-angle: 360deg; }
+}
+
+.box-to-glow {
+  @extend .dark-box;
+  position: relative;
+}
+
+.glow::before,
+.glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(
+  from var(--gradient-angle),
+  var(--clr-1),
+  var(--clr-2,)
+  var(--clr-3),
+  var(--clr-4),
+  var(--clr-5),
+  var(--clr-6));
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+}
+
+.glow::after{
+  filter: blur(3.5rem);
 }
