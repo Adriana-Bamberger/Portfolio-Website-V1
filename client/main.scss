@@ -7,7 +7,7 @@
   --clr-5: #24408E;
   --clr-6: #732982;
   // Background
-  --clr-7: #454343;
+  --clr-7: #838383;
   // Dark Grey
   --clr-8: #b3b3b3;
   // Light Grey
@@ -24,7 +24,7 @@ body {
 
 .header {
   font-size: x-large;
-  margin: 1%;
+  margin: 2%;
   border-radius: 30px;
 
   padding-bottom: 1%;
@@ -32,37 +32,33 @@ body {
   padding-top: 0.3%;
 }
 
-.dark-box {
-  background-color: var(--clr-8);
+.box {
   margin: 1%;
+  margin-bottom: 3%;
   border-radius: 30px;
   padding-left: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
   padding-top: 0.3%;
+}
+.dark-box {
+  @extend .box;
+  background-color: var(--clr-8);
 }
 
 .light-box {
+  @extend .box;
   background-color: var(--clr-9);
-  margin: 1%;
-  border-radius: 30px;
-  padding-left: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-top: 0.3%;
 }
 
 .white-box {
+  @extend .box;
   background-color: var(--clr-9);
-  margin: 1%;
-  border-radius: 30px;
-  padding-left: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-top: 0.3%;
+  
 }
 
 .border-button {
+border-radius: 30px
 
 }
 
@@ -71,12 +67,7 @@ body {
 }
 
 .project-box {
-  margin: 1%;
-  border-radius: 30px;
-  padding-left: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-top: 0.3%;
+  @extend .box;
 }
 
 .pink-project{
@@ -89,6 +80,7 @@ body {
   initial-value: 0deg;
   inherits: false;
 }
+
 @keyframes rotation {
   0% {--gradient-angle: 0deg; }
   10% { --gradient-angle: 360deg; }
@@ -104,10 +96,11 @@ body {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: -1;
   background: conic-gradient(
   from var(--gradient-angle),
   var(--clr-1),
-  var(--clr-2,)
+  var(--clr-2),
   var(--clr-3),
   var(--clr-4),
   var(--clr-5),
@@ -117,5 +110,5 @@ body {
 }
 
 .glow::after{
-  filter: blur(3.5rem);
+  filter: blur(1rem);
 }
