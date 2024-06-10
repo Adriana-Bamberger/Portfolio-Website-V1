@@ -48,5 +48,6 @@
     "semi": false,
     "singleQuote": true
   },
-  "browserslist": "> 2%, not dead"
+  "browserslist": "> 2%, not dead",
+  "homepage": "https://Adriana-Bamberger.github.io/Portfolio-Website-V1"
 }
