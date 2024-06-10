@@ -26,6 +26,9 @@ body {
 }
 
 // Header Bar
+.site-header {
+color: #ffffff;
+}
 .header {
   font-size: x-large;
   margin: 2%;
@@ -152,6 +155,7 @@ img {
 .dark-box {
   @extend .box;
   background-color: var(--clr-8);
+
 }
 
 .light-box {
@@ -163,6 +167,19 @@ img {
   @extend .box;
   background-color: var(--clr-9);
   
+}
+// Sets emoji instead of list dots
+.emoji-list {
+  list-style: none;
+  padding: 1%;
+  margin: 1%;
+  li {
+    padding-bottom: 1rem;
+    text-indent: -0.7rem;
+  }
+  li::before {
+    content: "✨";
+  }
 }
 
 .project-box {

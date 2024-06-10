@@ -3,7 +3,14 @@ function AboutBox() {
   return (
     <>
       <div className="light-box">
-        <h2> A big block of about me text will go here</h2>
+        <ul className="emoji-list">
+          <li>
+            Not sure what needs to go here but this can be another block of
+            text.
+          </li>
+          <li>I could have all kinds of infomation here</li>
+          <li>I absolulty want to have somthing funny here</li>
+        </ul>
       </div>
     </>
   )

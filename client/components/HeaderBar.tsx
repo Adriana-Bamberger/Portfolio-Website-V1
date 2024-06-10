@@ -3,7 +3,7 @@ function HeaderBar() {
   return (
     <>
       <div className="header">
-        <span>Adriana Bamberger | Portfolio</span>
+        <span className="site-header">Adriana Bamberger | Portfolio</span>
         <div className="buttons-container">
           {' '}
           <button className="button-1">Experience</button>
