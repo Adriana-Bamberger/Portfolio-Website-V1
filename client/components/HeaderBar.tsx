@@ -4,15 +4,12 @@ function HeaderBar() {
     <>
       <div className="header">
         <span>Adriana Bamberger | Portfolio</span>
-        <span>
-          <button> Exprience </button>
-        </span>
-        <span>
-          <button> Projects </button>
-        </span>
-        <span>
-          <button> Other Things </button>
-        </span>
+        <div className="buttons-container">
+          {' '}
+          <button className="button-1">Experience</button>
+          <button className="button-2">Projects</button>
+          <button className="button-3">Other Things</button>
+        </div>
       </div>
     </>
   )

@@ -1,3 +1,4 @@
+// COLOURS
 :root {
   // Glow Pride Rainbow colors
   --clr-1: #E40303;
@@ -7,31 +8,120 @@
   --clr-5: #24408E;
   --clr-6: #732982;
   // Background
-  --clr-7: #838383;
+  --clr-7: rgb(176, 176, 176);
   // Dark Grey
-  --clr-8: #b3b3b3;
+  --clr-8: #2a2a2a;
   // Light Grey
-  --clr-9: #e6e6e6;
+  --clr-9: #4a4a4a;
   // White
   --clr-10: #ffffff;
 
 }
+
+// Body with Background
 body {
   background-color: var(--clr-7);
   color: var(--clr-10);
   font-family: 'Poppins', sans-serif;
 }
 
+// Header Bar
 .header {
   font-size: x-large;
   margin: 2%;
   border-radius: 30px;
-
+  color: var(--clr-8);
   padding-bottom: 1%;
   padding-right: 1%;
   padding-top: 0.3%;
+  display: flex; /* Make the header a flex container */
+  justify-content: space-between; /* Align content on opposite ends */
 }
 
+// Buttons
+.buttons-container {
+  display: flex; /* Make the button container a flex container */
+}
+
+.button {
+  margin-left: 1em;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  font-size: medium;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #E40303,
+    #FF8C00,
+    #FFED00,
+    #008026,
+    #24408E,
+    #732982,
+    #AC1743,
+    #BF112E,
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-8);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.button-1{
+  @extend .button;
+  z-index: 0;
+}
+.button-2 {
+  @extend .button-1;
+  z-index: 3;
+}
+.button-3 {
+  @extend .button-2;
+  z-index: 0;
+}
+// Boxs
 .box {
   margin: 1%;
   margin-bottom: 3%;
@@ -40,6 +130,24 @@ body {
   padding-bottom: 1%;
   padding-right: 1%;
   padding-top: 0.3%;
+}
+.hero-box {
+  @extend .box;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-box h1{
+  align-items:flex-start;
+}
+.hero-box p {
+  align-items: flex-end;
+}
+img {
+  margin-top: 2%;
+  max-width:20%;
+
 }
 .dark-box {
   @extend .box;
@@ -55,15 +163,6 @@ body {
   @extend .box;
   background-color: var(--clr-9);
   
-}
-
-.border-button {
-border-radius: 30px
-
-}
-
-.solid-button {
-
 }
 
 .project-box {
