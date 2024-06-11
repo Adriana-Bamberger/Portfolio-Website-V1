@@ -8,20 +8,21 @@
   --clr-5: #24408E;
   --clr-6: #732982;
   // Background
-  --clr-7: rgb(176, 176, 176);
+  --clr-7: #454343;
   // Dark Grey
-  --clr-8: #2a2a2a;
+  --clr-8: #B3B3B3;
   // Light Grey
-  --clr-9: #4a4a4a;
+  --clr-9: #E6E6E6;
   // White
   --clr-10: #ffffff;
+  // Black text
+  --cl-11: #1E1E1E;
 
 }
 
 // Body with Background
 body {
   background-color: var(--clr-7);
-  color: var(--clr-10);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -33,7 +34,7 @@ color: #ffffff;
   font-size: x-large;
   margin: 2%;
   border-radius: 30px;
-  color: var(--clr-8);
+  color: var(--clr-11);
   padding-bottom: 1%;
   padding-right: 1%;
   padding-top: 0.3%;
@@ -127,6 +128,7 @@ color: #ffffff;
 // Boxs
 .box {
   margin: 1%;
+  color: var(--clr-11);
   margin-bottom: 2%;
   border-radius: 30px;
   padding-left: 3%;
@@ -137,12 +139,14 @@ color: #ffffff;
 .hero-box {
   @extend .box;
   display:flex;
+  color: var(--clr-11);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .hero-box h1{
   align-items:flex-start;
+  
 }
 .hero-box p {
   align-items: flex-end;
@@ -155,6 +159,7 @@ img {
 .dark-box {
   @extend .box;
   background-color: var(--clr-8);
+  color: var(--clr-11);
 
 }
 
