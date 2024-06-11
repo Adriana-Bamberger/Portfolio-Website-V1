@@ -5,26 +5,34 @@ function ProjectsCards() {
     <>
       <div>
         <div className="project-box">
+          <div className='pink-project'>
           <img
             src={project1Img}
             className="project-img"
             alt="The github repo of this portfolio"
           />
+          </div>
+          <div className='orange-project'>
           <img
             src={project1Img}
             className="project-img"
             alt="The github repo of this portfolio"
           />
+          </div>
+          <div className="yellow-project">
           <img
             src={project1Img}
             className="project-img"
             alt="The github repo of this portfolio"
           />
+          </div>
+          <div className='green-project'>
           <img
             src={project1Img}
             className="project-img"
             alt="The github repo of this portfolio"
           />
+          </div>
         </div>
       </div>
     </>

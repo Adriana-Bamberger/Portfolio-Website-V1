@@ -17,7 +17,9 @@
   --clr-10: #ffffff;
   // Black text
   --cl-11: #1E1E1E;
-
+  // Making transparancy
+  --0-5-clear: 0.5;
+  --0-8-clear: 0.8;
 }
 
 // Body with Background
@@ -192,7 +194,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  // align-items: center;
+  align-items: center;
 
   
 }
@@ -200,13 +202,43 @@ img {
   display: flex;
   border-radius: 10%;
   border-width: 1%;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.pink-project{
-  @extend .project-box;
+.project-card {
+ padding: 1%;
+ padding-bottom: 4%;
+ opacity: 0.5;
+ border-radius: 30px;
 }
-// Working on making things GLOW
+// Adding colour to project cards
+.pink-project {
+  @extend .project-card;
+  background-color: var(--clr-1);
+}
+.orange-project {
+  @extend .project-card;
+  background-color: var(--clr-2);
+}
+.yellow-project {
+  @extend .project-card;
+  background-color: var(--clr-3);
+}
+.green-project {
+  @extend .project-card;
+  background-color: var(--clr-4);
+}
+.blue-project {
+  @extend .project-card;
+  background-color: var(--clr-5);
+}
+.purple-project {
+  @extend .project-card;
+  background-color: var(--clr-6);
+}
+
+
+// The Rainbow GLOW 
 
 @property --gradient-angle {
   syntax: "<angle>";
