@@ -1,3 +1,6 @@
+// Conventions,
+// Using "em" whever possible to keep it media responcive.
+
 // COLOURS
 :root {
   // Glow Pride Rainbow colors
@@ -131,12 +134,12 @@ color: #ffffff;
 .box {
   margin: 1%;
   color: var(--clr-11);
-  margin-bottom: 2%;
+  margin-bottom: 2em;
   border-radius: 30px;
-  padding-left: 3%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-top: 0.3%;
+  padding-left: 3em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
 }
 .hero-box {
   @extend .box;
@@ -153,9 +156,10 @@ color: #ffffff;
 .hero-box p {
   align-items: flex-end;
 }
-img {
-  margin-top: 2%;
-  max-width:20%;
+
+.hero-box img {
+  margin-top: 2em;
+  max-width: 20em;
 
 }
 .dark-box {
@@ -178,8 +182,8 @@ img {
 // Sets emoji instead of list dots
 .emoji-list {
   list-style: none;
-  padding: 1%;
-  margin: 1%;
+  padding: 1em;
+  margin: 1em;
   li {
     padding-bottom: 1rem;
     text-indent: -0.7rem;
@@ -190,26 +194,32 @@ img {
 }
 
 .project-box {
-  @extend .box;
+  margin: 1em;
+  color: var(--clr-11);
+  margin-bottom: 2em;
+  border-radius: 30px;
+  padding: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-
-  
 }
-.project-img {
+.project-box img {
   display: flex;
-  border-radius: 10%;
-  border-width: 1%;
-  align-items: center;
+  border-radius: 30px;
+  border-width: 1em;
+  max-width: 20em;
 }
 
 .project-card {
- padding: 1%;
- padding-bottom: 4%;
+ padding: 1em;
+ padding-bottom: 4em;
+ margin: 1em;
  opacity: 0.5;
  border-radius: 30px;
+ min-width: 30em;
+ max-width: 40em;
 }
 // Adding colour to project cards
 .pink-project {

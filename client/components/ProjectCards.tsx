@@ -8,7 +8,6 @@ function ProjectsCards() {
           <div className='pink-project'>
           <img
             src={project1Img}
-            className="project-img"
             alt="The github repo of this portfolio"
           />
           </div>
