@@ -25,18 +25,18 @@
   --0-8-clear: 0.8;
 }
 
-// Body with Background
+// Body ------------------------------
 body {
   background-color: var(--clr-7);
   font-family: 'Poppins', sans-serif;
 }
 
-// Header Bar
+// Header Bar ------------------------
 .site-header {
 color: #ffffff;
 }
 .header {
-  font-size: x-large;
+  font-size: 1.5em;;
   margin: 2%;
   border-radius: 30px;
   color: var(--clr-11);
@@ -62,7 +62,7 @@ color: #ffffff;
   cursor: pointer;
   position: relative;
   border-radius: 10px;
-  font-size: medium;
+  font-size: 0.7em;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -130,7 +130,8 @@ color: #ffffff;
   @extend .button-2;
   z-index: 0;
 }
-// Boxs
+
+// Boxs ---------------------------
 .box {
   margin: 1%;
   color: var(--clr-11);
@@ -141,10 +142,9 @@ color: #ffffff;
   padding-right: 1em;
   padding-top: 0.3em;
 }
+// Hero Box -----------------------
 .hero-box {
-  @extend .box;
   display:flex;
-  color: var(--clr-11);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -154,14 +154,73 @@ color: #ffffff;
   
 }
 .hero-box p {
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .hero-box img {
-  margin-top: 2em;
-  max-width: 20em;
+  max-width: 15em;
 
 }
+
+// The Rainbow GLOW 
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% {--gradient-angle: 0deg; }
+  10% { --gradient-angle: 360deg; }
+}
+
+.dark-box-to-glow {
+  @extend .dark-box;
+  position: relative;
+}
+
+.glow::before,
+.glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: conic-gradient(
+  from var(--gradient-angle),
+  var(--clr-1),
+  var(--clr-2),
+  var(--clr-3),
+  var(--clr-4),
+  var(--clr-5),
+  var(--clr-6));
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+}
+
+.glow::after{
+  filter: blur(1rem);
+}
+// Social Media Buttons
+.social-icon {
+  background-image: url("path/to/black-and-white-icon.png"); // Black and white icon
+  width: /* Set appropriate width */;
+  height: /* Set appropriate height */;
+  background-size: cover; // Ensure image fills container
+  display: inline-block; // Maintain inline behavior
+
+  &:hover {
+    background-image: url("path/to/color-icon.png"); // Color version on hover
+    transition: background-image 0.3s ease-in-out; // Add a smooth transition
+  }
+}
+
+.social-icon__image {
+  opacity: 0; // Hide the default image to avoid content replacement
+  pointer-events: none; // Prevent accidental clicks on the hidden image
+}
+
+// Other Boxes ------------------------------
 .dark-box {
   @extend .box;
   background-color: var(--clr-8);
@@ -248,42 +307,3 @@ color: #ffffff;
 }
 
 
-// The Rainbow GLOW 
-
-@property --gradient-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes rotation {
-  0% {--gradient-angle: 0deg; }
-  10% { --gradient-angle: 360deg; }
-}
-
-.box-to-glow {
-  @extend .dark-box;
-  position: relative;
-}
-
-.glow::before,
-.glow::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: conic-gradient(
-  from var(--gradient-angle),
-  var(--clr-1),
-  var(--clr-2),
-  var(--clr-3),
-  var(--clr-4),
-  var(--clr-5),
-  var(--clr-6));
-  border-radius: inherit;
-  animation: rotation 20s linear infinite;
-}
-
-.glow::after{
-  filter: blur(1rem);
-}
