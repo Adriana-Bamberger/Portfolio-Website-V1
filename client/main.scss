@@ -201,23 +201,46 @@ color: #ffffff;
 .glow::after{
   filter: blur(1rem);
 }
+
 // Social Media Buttons
 .social-icon {
-  background-image: url("path/to/black-and-white-icon.png"); // Black and white icon
-  width: /* Set appropriate width */;
-  height: /* Set appropriate height */;
-  background-size: cover; // Ensure image fills container
-  display: inline-block; // Maintain inline behavior
-
-  &:hover {
-    background-image: url("path/to/color-icon.png"); // Color version on hover
-    transition: background-image 0.3s ease-in-out; // Add a smooth transition
-  }
+  width: 2em;
+  height: 2em;
+  background-size: cover;
+  display: inline-block;
 }
 
 .social-icon__image {
-  opacity: 0; // Hide the default image to avoid content replacement
-  pointer-events: none; // Prevent accidental clicks on the hidden image
+  opacity: 0;
+  pointer-events: none;
+}
+//LinkedIn
+.social-icon--linkedIn {
+  background-image: url("client/Images/linkedin-black.png");
+}
+.social-icon--linkedIn:hover {
+  background-image: url("client/Images/linkedin.png");
+}
+//Instagram
+.social-icon--instagram {
+  background-image: url("client/Images/instagram-black.png");
+}
+.social-icon--instagram:hover {
+  background-image: url("client/Images/instagram.png");
+}
+// Gmail
+.social-icon--gmail {
+  background-image: url("client/Images/gmail-black.png");
+}
+.social-icon--gmail:hover {
+  background-image: url("client/Images/gmail.png");
+}
+// Stack Overflow
+.social-icon--instagram {
+  background-image: url("client/Images/instagram-black.png");
+}
+.social-icon--instagram:hover {
+  background-image: url("client/Images/instagram.png");
 }
 
 // Other Boxes ------------------------------
