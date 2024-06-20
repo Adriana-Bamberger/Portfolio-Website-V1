@@ -43,29 +43,30 @@ color: #ffffff;
   padding-bottom: 1%;
   padding-right: 1%;
   padding-top: 0.3%;
-  display: flex; /* Make the header a flex container */
-  justify-content: space-between; /* Align content on opposite ends */
+  display: flex; 
+  justify-content: space-between; 
 }
 
 // Buttons
 .buttons-container {
-  display: flex; /* Make the button container a flex container */
+  display: flex; 
 }
 
 .button {
   margin-left: 1em;
   padding: 0.6em 2em;
-  border: none;
+  border: none; 
   outline: none;
-  color: #ffffff;
-  background: #ffffff;
+  color: var(--cl-11); 
+  background: #ffffff; 
   cursor: pointer;
   position: relative;
-  border-radius: 10px;
+  border-radius: 10px; 
   font-size: 0.7em;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border: 2px solid var(--clr-8); 
 }
 
 .button:before {
@@ -86,8 +87,6 @@ color: #ffffff;
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowing-button-85 20s linear infinite;
@@ -206,41 +205,39 @@ color: #ffffff;
 .social-icon {
   width: 2em;
   height: 2em;
-  background-size: cover;
   display: inline-block;
+  margin-right: 0.5em;
 }
 
 .social-icon__image {
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
+  width: 2em;
+  height: 2em;
+}
+// Git Hub
+.social-icon--github:hover {
+  content: url("./Images/github-logo.png");
 }
 //LinkedIn
-.social-icon--linkedIn {
-  background-image: url("client/Images/linkedin-black.png");
-}
 .social-icon--linkedIn:hover {
-  background-image: url("client/Images/linkedin.png");
+  content: url("./Images/linkedin.png");
 }
 //Instagram
-.social-icon--instagram {
-  background-image: url("client/Images/instagram-black.png");
-}
 .social-icon--instagram:hover {
-  background-image: url("client/Images/instagram.png");
+  content: url("./Images/instagram.png");
 }
 // Gmail
-.social-icon--gmail {
-  background-image: url("client/Images/gmail-black.png");
-}
 .social-icon--gmail:hover {
-  background-image: url("client/Images/gmail.png");
+  content: url("./Images/gmail.png");
 }
 // Stack Overflow
-.social-icon--instagram {
-  background-image: url("client/Images/instagram-black.png");
+.social-icon--stackOverflow:hover {
+  content: url("./Images/stack-overflow.png");
 }
-.social-icon--instagram:hover {
-  background-image: url("client/Images/instagram.png");
+// Good Reads
+.social-icon--goodReads:hover {
+  content: url("./Images/goodReads.png");
 }
 
 // Other Boxes ------------------------------
