@@ -6,9 +6,9 @@ function HeaderBar() {
         <span className="site-header">Adriana Bamberger | Portfolio</span>
         <div className="buttons-container">
           {' '}
-          <button className="button-1">Experience</button>
-          <button className="button-2">Projects</button>
-          <button className="button-3">Other Things</button>
+          <button className="button">Experience</button>
+          <button className="button">Projects</button>
+          <button className="button">Other Things</button>
         </div>
       </div>
     </>
