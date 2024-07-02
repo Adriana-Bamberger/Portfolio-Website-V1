@@ -1,80 +1,59 @@
 // A box react component for me to list out all the skills hard and soft that I have.
 // Imports to be added soon
+import ArtRage from '../Images/Skills/art-rage.png'
+import Canva from '../Images/Skills/canva.png'
+import ChatGPT from '../Images/Skills/chatgpt.png'
+import ClipStudioPaint from '../Images/Skills/clipstudiopaint.png'
+import Docker from '../Images/Skills/docker.png'
+import Expo from '../Images/Skills/expo.png'
+import Express from '../Images/Skills/expressJs.png'
+import Figma from '../Images/Skills/figma.png'
+import Firebase from '../Images/Skills/firebase.png'
+import Gemini from '../Images/Skills/gemini.png'
+import GitHub from '../Images/Skills/Github logo.png'
+import Google from '../Images/Skills/google.png'
+import HTML from '../Images/Skills/html-5.png'
+import JS from '../Images/Skills/js.png'
+import Knex from '../Images/Skills/knex.png'
+import MediBangPaint from '../Images/Skills/medibangpaint.png'
+import ReactNative from '../Images/Skills/react-native.png'
+import React from '../Images/Skills/react.png'
+import Sass from '../Images/Skills/sass.png'
+import SketchBook from '../Images/Skills/sketchbook.png'
+import Tailwind from '../Images/Skills/tailwind.png'
+import Typescript from '../Images/Skills/typescript.png'
+import VSCode from '../Images/Skills/vscode.png'
+//Holy crap that's a lot/
 function SkillsBox() {
   return (
     <div className="dark-box">
       <h1>Skills</h1>
-      <ul>
-        <li>GitHub</li>
-        <li>Clip Studio Paint</li>
-        <li>SketchBook</li>
-        <li>Art Rage</li>
-        <li>MediBang Paint</li>
-        <li>React</li>
-        <li>Visual Studio</li>
-        <li>Express.js</li>
-        <li>Node.js</li>
-        <li>Tailwind CSS</li>
-        <li>Sass</li>
-        <li>CSS</li>
-        <li>HTML</li>
-        <li>Typescript</li>
-        <li>JavaScript</li>
-        <li>Docker</li>
-        <li>Knex</li>
-        <li>Sqlite</li>
-        <li>Ubuntu</li>
-        <li>React Native</li>
-        <li>Expo</li>
-        <li>Firebase</li>
-        <li>Google Workspace</li>
-        <li>Gemini</li>
-        <li>ChatGPT</li>
-        <li>Canva</li>
-        <li>Figma</li>
-      </ul>
-      <div className="scroll textScrollSpeed">
+      <div className="scroll imgBox imgScrollSpeed">
         <div>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>ReactJS</span>
-          <span>Figma</span>
-          <span>Photoshop</span>
-          <span>Premiere Pro</span>
-          <span>Figma</span>
-          <span>Angular</span>
-          <span>Node JS</span>
+          <img src={ArtRage} alt="" />
+          <img src={Canva} alt="" />
+          <img src={ChatGPT} alt="" />
+          <img src={ClipStudioPaint} alt="" />
+          <img src={Docker} alt="" />
+          <img src={Expo} alt="" />
+          <img src={Express} alt="" />
+          <img src={Figma} alt="" />
+          <img src={Firebase} alt="" />
+          <img src={Gemini} alt="" />
+          <img src={GitHub} alt="" />
+          <img src={Google} alt="" />
+          <img src={HTML} alt="" />
+          <img src={JS} alt="" />
+          <img src={Knex} alt="" />
+          <img src={MediBangPaint} alt="" />
+          <img src={ReactNative} alt="" />
+          <img src={React} alt="" />
+          <img src={Sass} alt="" />
+          <img src={SketchBook} alt="" />
+          <img src={Tailwind} alt="" />
+          <img src={Typescript} alt="" />
+          <img src={VSCode} alt="" />
         </div>
-        {/* <div className="scroll imgBox imgScrollSpeed">
-          <div>
-            <img src={github} alt="" />
-            <img src={clipStudioPaint} alt="" />
-            <img src={sketchBook} alt="" />
-            <img src={artRage} alt="" />
-            <img src={mediBangPaint} alt="" />
-            <img src={react} alt="" />
-            <img src={visualStudio} alt="" />
-            <img src={expressJs} alt="" />
-            <img src={nodeJs} alt="" />
-            <img src={tailwind} alt="" />
-            <img src={Sass} alt="" />
-            <img src={html} alt="" />
-            <img src={typeScript} alt="" />
-            <img src={docker} alt="" />
-            <img src={knex} alt="" />
-            <img src={sqlite} alt="" />
-            <img src={ubuntu} alt="" />
-            <img src={reactNative} alt="" />
-            <img src={expo} alt="" />
-            <img src={firebase} alt="" />
-            <img src={googleWorkspace} alt="" />
-            <img src={gemini} alt="" />
-            <img src={chatGpt} alt="" />
-            <img src={canva} alt="" />
-            <img src={figma} alt="" />
-          </div>
-        </div> */}
       </div>
     </div>
   )
