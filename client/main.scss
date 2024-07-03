@@ -383,3 +383,15 @@ color: #ffffff;
 .hover-effect:hover {
   color: #ECECEC;
 }
+
+//Footer
+.footer {
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  margin: 0.5em;
+}
