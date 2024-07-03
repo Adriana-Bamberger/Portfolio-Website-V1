@@ -369,3 +369,15 @@ color: #ffffff;
 .imgScrollSpeed {
   --time: 25s;
 }
+
+//Hiding and display text
+.hidden-content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+.hover-effect:hover {
+  color: #ECECEC;
+}
