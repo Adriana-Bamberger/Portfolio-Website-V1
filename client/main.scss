@@ -302,6 +302,7 @@ color: #ffffff;
   display: flex;
   width: 1200px;
   overflow: hidden;
+  // Not sure why this is giving me a small error but I think it's working so if it's not broke don't fix it.
   -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
 }
 
