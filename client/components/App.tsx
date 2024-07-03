@@ -2,7 +2,7 @@
 import HeaderBar from './HeaderBar'
 import ExprienceBox from './ExperienceBox'
 import ProjectsBox from './ProjectsBox'
-import AboutBox from './AboutBox'
+import InterestsBox from './InterestsBox'
 import SkillsBox from './SkillsBox'
 import Footer from './Footer'
 import HeroBox from './HeroBox'
@@ -12,10 +12,10 @@ function App() {
     <>
       <HeaderBar />
       <HeroBox />
-      <AboutBox />
       <ProjectsBox />
       <ExprienceBox />
       <SkillsBox />
+      <InterestsBox />
       <Footer />
     </>
   )
