@@ -32,15 +32,16 @@
 body {
   background-color: var(--clr-7);
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 // Header Bar ------------------------
-.site-header {
+.header-title {
 color: #ffffff;
 }
 .header {
-  font-size: 1.5em;;
-  margin: 2%;
+  font-size: x-large;;
+  margin: 1em;
   border-radius: 30px;
   color: var(--clr-11);
   padding-bottom: 1%;
@@ -48,6 +49,7 @@ color: #ffffff;
   padding-top: 0.3%;
   display: flex; 
   justify-content: space-between; 
+  align-items: center;
 }
 // Buttons
 .button {
