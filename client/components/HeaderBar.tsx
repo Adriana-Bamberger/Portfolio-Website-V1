@@ -8,7 +8,7 @@ function HeaderBar() {
           {' '}
           <button className="button">Experience</button>
           <button className="button">Projects</button>
-          <button className="button">Other Things</button>
+          <button className="button">Download CV</button>
         </div>
       </div>
     </>

@@ -86,10 +86,10 @@ color: #ffffff;
 
 // Boxs ---------------------------
 .box {
-  margin: 1%;
+  margin: 1em;
   color: var(--clr-11);
   margin-bottom: 2em;
-  border-radius: 30px;
+  border-radius: 3em;
   padding-left: 3em;
   padding-bottom: 1em;
   padding-right: 1em;
@@ -108,13 +108,18 @@ color: #ffffff;
 }
 .hero-box p {
   align-items: flex-start;
+  margin-top: 0cm;
+
 }
 
 .hero-box img {
   max-width: 15em;
 
 }
-
+.subheading {
+  font-size: large;
+  font-style: italic;
+}
 // The Rainbow GLOW 
 
 @property --gradient-angle {
@@ -197,14 +202,14 @@ color: #ffffff;
 // Other Boxes ------------------------------
 .dark-box {
   @extend .box;
-  background-color: var(--clr-8);
+  background-color: var(--clr-9);
   color: var(--clr-11);
 
 }
 
 .light-box {
   @extend .box;
-  background-color: var(--clr-9);
+  background-color: var(--clr-8);
 }
 
 .white-box {

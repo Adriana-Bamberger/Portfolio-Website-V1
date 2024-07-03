@@ -11,14 +11,25 @@ function HeroBox() {
     <>
       <div className="dark-box-to-glow glow">
         <h1>Heya!</h1>
+        <p className="subheading">
+          Kia ora! I'm a full-stack developer with a passion for creative
+          problem-solving.{' '}
+        </p>
         <div className="hero-box">
           <p>
-            A bunch of text will go here, Were talking only a sentance about
-            this long, Its just so that people can get an idea of what I have to
-            offer, It should have something funny included its like the opening
-            phrase in a book its gotta catch the eye of the person reading it
-            right away. <br />I might even put some buttons below so that you
-            can navitage to socials...
+            My background in costume creation, specialist retail, and volunteer
+            work for Scouting translates well to web development, fostering
+            strong collaboration and communication skills for dynamic, diverse
+            teams. <br />
+            An interest in coding was sparked by an introductory course I took
+            at age twelve, which recently led me to the Dev Academy bootcamp.{' '}
+            <br />
+            Now, I'm eager to leverage my adaptability and technical skills to
+            build creative web applications.
+            <br /> My projects that explore React and React Native can be found
+            on my GitHub and portfolio. <br />
+            As a continuous learner, I'm drawn to inclusive and supportive
+            environments that embrace exploration and new challenges.
           </p>
           <img src={img} alt="cartoon drawing of adriana by adriana" />
         </div>
