@@ -51,6 +51,46 @@ color: #ffffff;
   justify-content: space-between; 
   align-items: center;
 }
+// Social Media Buttons
+.social-icon {
+  height: 2em;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.social-icon__image {
+  opacity: 1;
+  display: block;
+  height: 2em;
+}
+// Git Hub
+.social-icon--github:hover {
+  content: url("./Images/github-logo.png");
+}
+//LinkedIn
+.social-icon--linkedIn:hover {
+  content: url("./Images/linkedin.png");
+}
+//Instagram
+.social-icon--instagram:hover {
+  content: url("./Images/instagram.png");
+}
+// Gmail
+.social-icon--gmail:hover {
+  content: url("./Images/gmail.png");
+}
+// Stack Overflow
+.social-icon--stackOverflow:hover {
+  content: url("./Images/stack-overflow.png");
+}
+// Good Reads
+.social-icon--goodReads:hover {
+  content: url("./Images/goodReads.png");
+}
+// Download CV 
+.social-icon--downloadCv:hover {
+  content: url("./Images/Download-cv-hover.png");
+}
 // Buttons
 .button {
   background-color: var(--btn-bg-color);
@@ -162,46 +202,7 @@ color: #ffffff;
 .glow::after{
   filter: blur(1rem);
 }
-// Social Media Buttons
-.social-icon {
-  height: 2em;
-  display: inline-block;
-  margin-right: 0.5em;
-}
 
-.social-icon__image {
-  opacity: 1;
-  // pointer-events: auto;
-  height: 2em;
-}
-// Git Hub
-.social-icon--github:hover {
-  content: url("./Images/github-logo.png");
-}
-//LinkedIn
-.social-icon--linkedIn:hover {
-  content: url("./Images/linkedin.png");
-}
-//Instagram
-.social-icon--instagram:hover {
-  content: url("./Images/instagram.png");
-}
-// Gmail
-.social-icon--gmail:hover {
-  content: url("./Images/gmail.png");
-}
-// Stack Overflow
-.social-icon--stackOverflow:hover {
-  content: url("./Images/stack-overflow.png");
-}
-// Good Reads
-.social-icon--goodReads:hover {
-  content: url("./Images/goodReads.png");
-}
-// Download CV 
-.social-icon--downloadCv:hover {
-  content: url("./Images/Download-cv-hover.png");
-}
 
 // Other Boxes ------------------------------
 .dark-box {
