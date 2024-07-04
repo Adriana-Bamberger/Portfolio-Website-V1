@@ -162,10 +162,8 @@ color: #ffffff;
 .glow::after{
   filter: blur(1rem);
 }
-
 // Social Media Buttons
 .social-icon {
-  width: 2em;
   height: 2em;
   display: inline-block;
   margin-right: 0.5em;
@@ -174,7 +172,6 @@ color: #ffffff;
 .social-icon__image {
   opacity: 1;
   pointer-events: none;
-  width: 2em;
   height: 2em;
 }
 // Git Hub
@@ -200,6 +197,10 @@ color: #ffffff;
 // Good Reads
 .social-icon--goodReads:hover {
   content: url("./Images/goodReads.png");
+}
+// Download CV 
+.social-icon--downloadCv:hover {
+  content: url("./Images/Download-cv-hover.png");
 }
 
 // Other Boxes ------------------------------

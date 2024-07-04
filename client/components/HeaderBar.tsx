@@ -6,6 +6,7 @@ import Instagram from '../Images/instagram-black.png'
 import Gmail from '../Images/gmail-black.png'
 import StackOverflow from '../Images/stack-overflow-black.png'
 import GoodReads from '../Images/goodReads-black.png'
+import DownloadCV from '../Images/Download-cv.png'
 function HeaderBar() {
   const cvDownloadUrl =
     'https://drive.google.com/file/d/1zx22_dCGr4YnZ6O81ZJzWKJy1ny3yUa4/view?usp=sharing'
@@ -55,6 +56,13 @@ function HeaderBar() {
                 className="social-icon__image"
                 src={GoodReads}
                 alt="Good Reads Icon (Black and White)"
+              />
+            </div>
+            <div className="social-icon social-icon--downloadCv">
+              <img
+                className="social-icon__image"
+                src={DownloadCV}
+                alt="Download CV"
               />
             </div>
             {/* <a href={cvDownloadUrl} className="button">
