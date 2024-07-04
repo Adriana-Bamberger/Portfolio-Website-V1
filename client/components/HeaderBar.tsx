@@ -3,7 +3,6 @@
 import github from '../Images/github-logo.png'
 import Linkedin from '../Images/linkedin-black.png'
 import Instagram from '../Images/instagram-black.png'
-import Gmail from '../Images/gmail-black.png'
 import StackOverflow from '../Images/stack-overflow-black.png'
 import GoodReads from '../Images/goodReads-black.png'
 import DownloadCV from '../Images/Download-cv.png'
