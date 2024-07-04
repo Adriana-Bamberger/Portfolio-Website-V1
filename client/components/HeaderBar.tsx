@@ -13,66 +13,100 @@ function HeaderBar() {
   return (
     <>
       <div className="header">
+        {/* Title */}
         <span className="header-title">Adriana Bamberger | Portfolio</span>
-
+        {/* Other Website Links */}
         <div className="buttons-container">
-          <div className="social-icon social-icon--github">
-            <a
-              href="https://github.com/Adriana-Bamberger"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          {/* GitHub */}
+          <a
+            href="https://github.com/Adriana-Bamberger"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="social-icon social-icon--github">
               <img
                 className="social-icon__image"
                 src={github}
                 alt="GitHub Icon (Black and White)"
               />
-            </a>
-          </div>
-          <div className="social-icon social-icon--linkedIn">
-            <img
-              className="social-icon__image"
-              src={Linkedin}
-              alt="Linked In Icon (Black and White)"
-            />
-          </div>
-          <div className="social-icon social-icon--instagram">
-            <img
-              className="social-icon__image"
-              src={Instagram}
-              alt="Instagram Icon (Black and White)"
-            />
-          </div>
-          <div className="social-icon social-icon--gmail">
-            <img
-              className="social-icon__image"
-              src={Gmail}
-              alt="Gmail Icon (Black and White)"
-            />
-          </div>
-          <div className="social-icon social-icon--stackOverflow">
-            <img
-              className="social-icon__image"
-              src={StackOverflow}
-              alt="Stack Overflow Icon (Black and White)"
-            />
-          </div>
-          <div className="social-icon social-icon--goodReads">
-            <img
-              className="social-icon__image"
-              src={GoodReads}
-              alt="Good Reads Icon (Black and White)"
-            />
-          </div>
-          <div className="social-icon social-icon--downloadCv">
-            <a href={cvDownloadUrl} target="_blank" rel="noopener noreferrer">
+            </div>
+          </a>
+          {/* Linked In */}
+          <a
+            href="https://nz.linkedin.com/in/adriana-bamberger-a58742205"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="social-icon social-icon--linkedIn">
+              <img
+                className="social-icon__image"
+                src={Linkedin}
+                alt="Linked In Icon (Black and White)"
+              />
+            </div>
+          </a>
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/adri.bamberger/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="social-icon social-icon--instagram">
+              <img
+                className="social-icon__image"
+                src={Instagram}
+                alt="Instagram Icon (Black and White)"
+              />
+            </div>
+          </a>
+          {/* Gmail is very slow to do the link, not sure it's worth having.
+          <a href="mailto:adriana@bamberger.nz">
+            <div className="social-icon social-icon--gmail">
+              <img
+                className="social-icon__image"
+                src={Gmail}
+                alt="Gmail Icon (Black and White)"
+              />
+            </div>
+          </a> */}
+          {/* Stack Overflow */}
+          <a
+            href="https://stackoverflow.com/users/23250670/adriana-bamberger"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="social-icon social-icon--stackOverflow">
+              <img
+                className="social-icon__image"
+                src={StackOverflow}
+                alt="Stack Overflow Icon (Black and White)"
+              />
+            </div>
+          </a>
+          {/* Good Reads */}
+          <a
+            href="https://www.goodreads.com/user/show/166058375-adriana-bamberger"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="social-icon social-icon--goodReads">
+              <img
+                className="social-icon__image"
+                src={GoodReads}
+                alt="Good Reads Icon (Black and White)"
+              />
+            </div>
+          </a>
+          {/* Download CV */}
+          <a href={cvDownloadUrl} target="_blank" rel="noopener noreferrer">
+            <div className="social-icon social-icon--downloadCv">
               <img
                 className="social-icon__image"
                 src={DownloadCV}
                 alt="Download CV"
               />
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </>
