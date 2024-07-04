@@ -14,60 +14,64 @@ function HeaderBar() {
     <>
       <div className="header">
         <span className="header-title">Adriana Bamberger | Portfolio</span>
-        <div>
-          <div className="buttons-container">
-            <div className="social-icon social-icon--github">
+
+        <div className="buttons-container">
+          <div className="social-icon social-icon--github">
+            <a
+              href="https://github.com/Adriana-Bamberger"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="social-icon__image"
                 src={github}
                 alt="GitHub Icon (Black and White)"
               />
-            </div>
-            <div className="social-icon social-icon--linkedIn">
-              <img
-                className="social-icon__image"
-                src={Linkedin}
-                alt="Linked In Icon (Black and White)"
-              />
-            </div>
-            <div className="social-icon social-icon--instagram">
-              <img
-                className="social-icon__image"
-                src={Instagram}
-                alt="Instagram Icon (Black and White)"
-              />
-            </div>
-            <div className="social-icon social-icon--gmail">
-              <img
-                className="social-icon__image"
-                src={Gmail}
-                alt="Gmail Icon (Black and White)"
-              />
-            </div>
-            <div className="social-icon social-icon--stackOverflow">
-              <img
-                className="social-icon__image"
-                src={StackOverflow}
-                alt="Stack Overflow Icon (Black and White)"
-              />
-            </div>
-            <div className="social-icon social-icon--goodReads">
-              <img
-                className="social-icon__image"
-                src={GoodReads}
-                alt="Good Reads Icon (Black and White)"
-              />
-            </div>
-            <div className="social-icon social-icon--downloadCv">
+            </a>
+          </div>
+          <div className="social-icon social-icon--linkedIn">
+            <img
+              className="social-icon__image"
+              src={Linkedin}
+              alt="Linked In Icon (Black and White)"
+            />
+          </div>
+          <div className="social-icon social-icon--instagram">
+            <img
+              className="social-icon__image"
+              src={Instagram}
+              alt="Instagram Icon (Black and White)"
+            />
+          </div>
+          <div className="social-icon social-icon--gmail">
+            <img
+              className="social-icon__image"
+              src={Gmail}
+              alt="Gmail Icon (Black and White)"
+            />
+          </div>
+          <div className="social-icon social-icon--stackOverflow">
+            <img
+              className="social-icon__image"
+              src={StackOverflow}
+              alt="Stack Overflow Icon (Black and White)"
+            />
+          </div>
+          <div className="social-icon social-icon--goodReads">
+            <img
+              className="social-icon__image"
+              src={GoodReads}
+              alt="Good Reads Icon (Black and White)"
+            />
+          </div>
+          <div className="social-icon social-icon--downloadCv">
+            <a href={cvDownloadUrl} target="_blank" rel="noopener noreferrer">
               <img
                 className="social-icon__image"
                 src={DownloadCV}
                 alt="Download CV"
               />
-            </div>
-            {/* <a href={cvDownloadUrl} className="button">
-              Download CV
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
