@@ -1,5 +1,4 @@
-// A box react component for me to list out all the skills hard and soft that I have.
-// Imports to be added soon
+// TODO: Adjust the display frame size that this moves in, make it constant, and update the images - I'm missing a few.
 import ArtRage from '../Images/Skills/art-rage.png'
 import Canva from '../Images/Skills/canva.png'
 import ChatGPT from '../Images/Skills/chatgpt.png'
@@ -23,43 +22,10 @@ import SketchBook from '../Images/Skills/sketchbook.png'
 import Tailwind from '../Images/Skills/tailwind.png'
 import Typescript from '../Images/Skills/typescript.png'
 import VSCode from '../Images/Skills/vscode.png'
-//Holy crap that's a lot/
+
 function SkillsBox() {
   return (
     <div className="dark-box">
-      <h1>Skills</h1>
-      <ul>
-        <li>
-          <b>Front-End Development: </b>React (1000+ hours), React Native,
-          HTML5, CSS3 (SCSS/Sass), JavaScript, TypeScript
-        </li>
-        <li>
-          <b>Version Control:</b> Git
-        </li>
-        <li>
-          <b>Communication & Collaboration:</b> Excellent communication and
-          collaboration skills, honed through project leadership and teaching
-          experience.
-        </li>
-        <li>
-          <b>Problem-Solving & Adaptability:</b> Proven ability to solve
-          problems, adapt to new technologies, and work effectively in
-          fast-paced environments.
-        </li>
-        <li>
-          <b>Customer Service:</b> Strong customer service skills with a focus
-          on understanding client needs and exceeding expectations.
-        </li>
-        <li>
-          <b>Time Management & Organization:</b> Skilled at prioritizing tasks,
-          managing deadlines, and working effectively under pressure.
-        </li>
-        <li>
-          <b>Creative Technologist:</b> Experience in web development and a
-          background in costume creation allows me to translate creative visions
-          into functional and visually appealing web applications.
-        </li>
-      </ul>
       <div className="scroll imgBox imgScrollSpeed">
         <div>
           <img src={ArtRage} alt="" />
