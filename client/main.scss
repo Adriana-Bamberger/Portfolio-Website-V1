@@ -304,41 +304,40 @@ color: #ffffff;
 .scroll {
   position: relative;
   display: flex;
-  width: 1200px;
+  width: 100%;
   overflow: hidden;
-  // Not sure why this is giving me a small error but I think it's working so if it's not broke don't fix it.
-  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
 }
 
 .scroll div {
+  display: flex;
   white-space: nowrap;
   animation: scroll var(--time) linear infinite;
-  animation-delay: calc(var(--time)*-1);
-
+  animation-delay: calc(var(--time) * -1);
 }
 
 .scroll div:nth-child(2) {
   animation: scroll2 var(--time) linear infinite;
-  animation-delay: calc(var(--time)/-2);
+  animation-delay: calc(var(--time) / -2);
 }
 
 @keyframes scroll {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
 
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
 @keyframes scroll2 {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 
   100% {
-      transform: translateX(-200%);
+    transform: translateX(-200%);
   }
 }
 
@@ -366,8 +365,9 @@ color: #ffffff;
 
 .imgBox img {
   max-width: 100px;
-  scale: 0.8;
+  transform: scale(0.8);
 }
+
 .textScrollSpeed {
   --time: 20s;
 }
