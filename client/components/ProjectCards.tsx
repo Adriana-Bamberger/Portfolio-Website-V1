@@ -5,32 +5,32 @@ function ProjectsCards() {
     <>
       <div>
         <div className="project-box">
-          <div className='pink-project'>
-          <img
-            src={project1Img}
-            alt="The github repo of this portfolio"
-          />
+          <div className="pink-project">
+            <img src={project1Img} alt="The github repo of this portfolio" />
+            <p>This component is a WIP</p>
           </div>
-          <div className='orange-project'>
-          <img
-            src={project1Img}
-            className="project-img"
-            alt="The github repo of this portfolio"
-          />
+          <div className="orange-project">
+            <img
+              src={project1Img}
+              className="project-img"
+              alt="The github repo of this portfolio"
+            />
+            <p>Each project box will animate onto screen and on hover</p>
           </div>
           <div className="yellow-project">
-          <img
-            src={project1Img}
-            className="project-img"
-            alt="The github repo of this portfolio"
-          />
+            <img
+              src={project1Img}
+              className="project-img"
+              alt="The github repo of this portfolio"
+            />
+            <p>Each project will have a description and a link</p>
           </div>
-          <div className='green-project'>
-          <img
-            src={project1Img}
-            className="project-img"
-            alt="The github repo of this portfolio"
-          />
+          <div className="green-project">
+            <img
+              src={project1Img}
+              className="project-img"
+              alt="The github repo of this portfolio"
+            />
           </div>
         </div>
       </div>
