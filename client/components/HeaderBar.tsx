@@ -8,7 +8,7 @@ import GoodReads from '../Images/goodReads-black.png'
 import DownloadCV from '../Images/Download-cv.png'
 function HeaderBar() {
   const cvDownloadUrl =
-    'https://drive.google.com/file/d/1zx22_dCGr4YnZ6O81ZJzWKJy1ny3yUa4/view?usp=sharing'
+    'https://drive.google.com/file/d/1iagpXERR6W1qiFfLOncFBi0Ogm_3chTY/view?usp=sharing'
   return (
     <>
       <div className="header">
