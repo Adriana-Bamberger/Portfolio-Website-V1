@@ -31,6 +31,7 @@ function ProjectsCards() {
               className="project-img"
               alt="The github repo of this portfolio"
             />
+            <p>And a size responcive layout.</p>
           </div>
         </div>
       </div>
