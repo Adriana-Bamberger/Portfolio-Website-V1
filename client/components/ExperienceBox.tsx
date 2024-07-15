@@ -11,59 +11,59 @@ function ExprienceBox() {
     {
       type: 'h3',
       content:
-        'TRAINEE: FULL STACK WEB DEVELOPMENT | Dev Academy Aotearoa | March 2024 - July 2024',
+        'Trainee: Full Stack Web Development | Dev Academy Aotearoa |  March 2024 - July 2024',
     },
     {
       type: 'p',
       content:
-        '➔ An intensive 15-week full immersive software web development bootcamp that mimics a real-life development environment as closely as possible. The course taught us a modern web development stack using technologies such as  <b>HTML5, CSS3 (SCSS/Sass), JavaScript, TypeScript, React, React Native, Node.js, Express.js, NPM, Knex, SQLite3, Docker, Vite, Vitest, Jest, Storybook, Superagent, Supertest, Figma, Canva,</b> and<b> Visual Studio.</b> I learned by doing and exploring;  <b>Unit testing, Test Driven Development, Asynchronous Programming Techniques, RESTful APIs,</b> and<b> GitHub.</b> Approximately 1000 hours of coding. <br /> ➔ We were given hands-on challenges to do on our own, in groups, or with pair programming. <br /> ➔ The program strongly emphasized human skills, empathy, and well-being. Every Friday, we would join forces and build applications in teams of four. This gave me opportunities to practice giving and receiving growth feedback and working in teams using agile methodology. <br /> ➔ For our final project, my team of five learned to use React Native and built an iOS app in less than a week. Our approach was to divide and conquer the app components. I was responsible for the planning, documentation, navigation, front end testing, and making sure our backend components worked with our front end components. It was an awesome experience to sample a bit of native app development, and it was great fun to pick up a new framework and figure it out with my teammates.',
+        '•  An intensive 15-week immersive full stack web development bootcamp focusing on real-world development scenarios. <br/> <b>HTML5, CSS3 (SCSS/Sass), JavaScript, TypeScript, React, React Native, Node.js, Express.js, NPM, Knex, SQLite3, Docker, Vite, Vitest, Jest, Storybook, Superagent, Supertest, Figma, Canva,</b> and <b>Visual Studio.</b> Practiced extensively in <b>Unit Testing, Test Driven Development, Asynchronous Programming Techniques, RESTful APIs,</b> and <b>Git.</b> <br/> Approximately 900 hours of coding. <br/> •  Hands-on challenges, both independently and collaboratively, through group and pair programming sessions. <br/> •  Emphasized soft skills, empathy, and well-being, learning meditation and integrating agile methodologies into team projects. Participated weekly in team-based application development exercises, providing and receiving growth-oriented feedback. <br/> •  Learned how to use and developed a <b>React Native</b> iOS application with <b>Firebase</b> and <b>EXPO</b> with a team of five within a week for our final project. Managed planning, documentation, navigation, and front-end testing, and ensured seamless integration of back-end and front-end components.',
     },
     {
       type: 'h3',
-      content: 'SENIOR SALES CONSULTANT | Tile Space | July 2023 - March 2024',
+      content: 'Senior Sales Consultant | Tile Space | July 2023 - March 2024 ',
     },
     {
       type: 'p',
       content:
-        'Technical sales, POS Systems, creating 3D renders of rooms for customers giving and receiving design input. Using enterprise resource planning, customer relationship management, and 3D rendering software to give outstanding customer service, keeping in touch with the design-to-construction-completion process. In store merchandising, marketing, baristaing, and cash flow management.',
-    },
-    {
-      type: 'h3',
-      content:
-        'SNOW, CAMPING, AND HIKING SPECIALIST, RETAIL | Torpedo 7 | October 2022 - July 2023',
-    },
-    {
-      type: 'p',
-      content:
-        'Leveraging in-depth knowledge of camping, snow, hiking, and biking gear, Trained through Torpedo 7 Red Seed program and extensive supplier sessions with top outdoor brands, delivered exceptional customer service, building rapport and recommending the perfect gear for each need. Supported store operations with merchandising, fitting services, communications, and warranty processing.',
-    },
-    {
-      type: 'h3',
-      content: 'Career Break | July 2022 - October 2022',
-    },
-    {
-      type: 'p',
-      content:
-        'Spent three months focusing on creative pursuits, changing residences, and recovering from a minor surgery',
+        ' •  Technical sales, POS systems, creating 3D renders of rooms for customers, giving and receiving design input. <br/> •  Using enterprise resource planning, customer relationship management, and 3D rendering software to give outstanding customer service, keeping in touch with the design-to-construction-completion process. <br/> •  In store merchandising, marketing, baristaing, and cash flow management.',
     },
     {
       type: 'h3',
       content:
-        'SEWING SPECIALIST, RETAIL | Spotlight | February 2022 - July 2022',
+        'Snow, Camping, and Hiking Specialist, Retail | Torpedo 7 | October 2022 - July 2023',
     },
     {
       type: 'p',
       content:
-        'Interdepartmental, store, and customer communications, technical sales, and stock management.',
+        '• Drew on my Scouting background and underwent training from top outdoor brands. <br/> • Exceptional customer service, built rapport, and recommended the perfect gear for each need. <br/> • Supported store operations with merchandising, fitting services, communications, and warranty processing. <br/> • Passed on my knowledge through thrice weekly 20 minute hands on lessons that involved presentation, activities, retrospectives, and a friendly competition on new products, systems or technology.',
     },
     {
       type: 'h3',
-      content: 'SKI INSTRUCTOR | Snowplanet | 2020 - 2021',
+      content: 'Creative Director | Zideways | July 2022 - October 2022',
     },
     {
       type: 'p',
       content:
-        'Planning and delivering high risk ski lessons for under-fives, through to intermediate levels. Customer service and multi-tasking, flexibility under pressure, knowledge and skill of snow sports, and its terminology. Communicating customer feedback, team messages, plans, and comments to the appropriate people on and off the snow to ensure everything ran smoothly.',
+        'As a jobby I was curating custom costumes and props for various clients around the globe. This is something I want to casually continue in the future. Experimented with 3D rendering software <b>CLO3D</b> used and automated the <b>Google Workspace</b> and <b>Meta suite</b> to manage all business elements. I delivered to many customers on time and on budget.',
+    },
+    {
+      type: 'h3',
+      content:
+        'Sewing Specialist, Retail |  Spotlight | February 2022 - July 2022',
+    },
+    {
+      type: 'p',
+      content:
+        'My role was till sales, interdepartmental, and store communications. <br/> Because I love sewing so much I stepped in to help with more technical sales, helping customers of all skill levels, Providing personalized project guidance, including: <br/> •  Selecting suitable sewing patterns, fabrics, and notions. <br/> •  Translated technical sewing instructions into clear, actionable steps. <br/> •  Compiled material lists and project timelines, helping customers succeed through ongoing support and troubleshooting assistance.',
+    },
+    {
+      type: 'h3',
+      content: 'Ski Instructor | Snowplanet | 2020 - 2021',
+    },
+    {
+      type: 'p',
+      content:
+        '•  Planning and delivering high risk ski lessons for under-fives, through to intermediate levels. <br/> •  Customer service and multi-tasking, flexibility under pressure, knowledge and skill of snow sports. <br/> •  Communicating customer feedback, team messages, plans, and comments to the appropriate people on and off the snow to ensure everything ran smoothly.',
     },
     {
       type: 'h3',
@@ -73,13 +73,13 @@ function ExprienceBox() {
     {
       type: 'p',
       content:
-        'Sole charge café running, barista service, Plant nursery and large sculpture art sales and support.',
+        'Sole charge café running, barista service, Plant nursery and large sculpture art sales and support. <br/> I learnt a lot and have many fun stories from my time there.',
     },
   ]
   return (
     <>
       <div className="light-box">
-        <h1>Education and Experience</h1>
+        <h1>Experience</h1>
         {experiences.map((element, index) => {
           if (element.type === 'h3') {
             const isActive = activeIndex === index
