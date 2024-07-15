@@ -1,12 +1,16 @@
 
 # Portfolio-Website
 https://adriana.bamberger.nz/
-
-## About me
-Kia ora! I'm a full-stack developer with a passion for creative problem-solving. 
-My background in costume creation, specialist retail, and volunteer work for Scouting translates well to web development, fostering strong collaboration and communication skills for dynamic, diverse teams. 
-An interest in coding was sparked by an introductory course I took at age twelve, which recently led me to the Dev Academy bootcamp.
-Now, I'm eager to leverage my adaptability and technical skills to build creative web applications. 
-My projects that explore React and React Native can be found on my GitHub and portfolio. 
-As a continuous learner, I'm drawn to inclusive and supportive environments that embrace exploration and new challenges.
-
+Currently a casual work in progress.
+## Learning Objectives
+I am exploring more UI design and motion design with this, hopefully eventually even build my own component library to connect to it.
+## Technologies and Skills Used So Far
+- Typescript
+- Sass
+- Vite
+- Github Pages
+- Domain Hosting
+- Nginx
+- Figma
+- Canva
+- Benchmarking
