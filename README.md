@@ -1,7 +1,7 @@
 
 # Portfolio-Website
 https://adriana.bamberger.nz/
-Currently in progress.
+Currently a casual work in progress.
 ## Learning Objectives
 I am exploring more UI design and motion design with this, hopefully eventually even build my own component library to connect to it.
 ## Technologies and Skills Used So Far
