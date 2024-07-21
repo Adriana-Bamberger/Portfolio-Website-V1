@@ -37,10 +37,11 @@ body {
 
 // Header Bar ------------------------
 .header-title {
-color: #ffffff;
+  color: #ffffff;
 }
+
 .header {
-  font-size: x-large;;
+  font-size: x-large;
   margin: 1em;
   border-radius: 30px;
   color: var(--clr-11);
@@ -51,6 +52,15 @@ color: #ffffff;
   justify-content: space-between; 
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+}
+
 // Social Media Buttons
 .social-icon {
   height: 2em;
@@ -63,34 +73,35 @@ color: #ffffff;
   display: block;
   height: 2em;
 }
-// Git Hub
+
 .social-icon--github:hover {
   content: url("./Images/github-logo.png");
 }
-//LinkedIn
+
 .social-icon--linkedIn:hover {
   content: url("./Images/linkedin.png");
 }
-//Instagram
+
 .social-icon--instagram:hover {
   content: url("./Images/instagram.png");
 }
-// Gmail
+
 .social-icon--gmail:hover {
   content: url("./Images/gmail.png");
 }
-// Stack Overflow
+
 .social-icon--stackOverflow:hover {
   content: url("./Images/stack-overflow.png");
 }
-// Good Reads
+
 .social-icon--goodReads:hover {
   content: url("./Images/goodReads.png");
 }
-// Download CV 
+
 .social-icon--downloadCv:hover {
   content: url("./Images/Download-cv-hover.png");
 }
+
 // Buttons
 .button {
   background-color: var(--btn-bg-color);
@@ -106,6 +117,14 @@ color: #ffffff;
   cursor: pointer;
   /* Animation for border */
   animation: animate-border 10s linear infinite;
+}
+
+@media (max-width: 600px) {
+  .button {
+    margin-left: 0;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+  }
 }
 
 /* Animation for the border color */
@@ -138,33 +157,54 @@ color: #ffffff;
   padding-right: 1em;
   padding-top: 0.3em;
 }
+
+@media (max-width: 600px) {
+  .box {
+    padding: 1em;
+    margin: 0.5em;
+  }
+}
+
 // Hero Box -----------------------
 .hero-box {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.hero-box h1{
-  align-items:flex-start;
-  
+
+@media (max-width: 600px) {
+  .hero-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-box img {
+    max-width: 100%;
+    margin-top: 1em;
+  }
 }
+
+.hero-box h1 {
+  align-items: flex-start;
+}
+
 .hero-box p {
   align-items: flex-start;
-  margin-top: 0cm;
-
+  margin-top: 0;
 }
 
 .hero-box img {
   max-width: 12em;
   align-items: center;
 }
+
 .subheading {
   font-size: large;
   font-style: italic;
 }
-// The Rainbow GLOW 
 
+// The Rainbow GLOW 
 @property --gradient-angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -172,7 +212,7 @@ color: #ffffff;
 }
 
 @keyframes rotation {
-  0% {--gradient-angle: 0deg; }
+  0% { --gradient-angle: 0deg; }
   10% { --gradient-angle: 360deg; }
 }
 
@@ -188,28 +228,27 @@ color: #ffffff;
   inset: 0;
   z-index: -1;
   background: conic-gradient(
-  from var(--gradient-angle),
-  var(--clr-1),
-  var(--clr-2),
-  var(--clr-3),
-  var(--clr-4),
-  var(--clr-5),
-  var(--clr-6));
+    from var(--gradient-angle),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-6)
+  );
   border-radius: inherit;
   animation: rotation 20s linear infinite;
 }
 
-.glow::after{
+.glow::after {
   filter: blur(1rem);
 }
-
 
 // Other Boxes ------------------------------
 .dark-box {
   @extend .box;
   background-color: var(--clr-9);
   color: var(--clr-11);
-
 }
 
 .light-box {
@@ -220,8 +259,8 @@ color: #ffffff;
 .white-box {
   @extend .box;
   background-color: var(--clr-9);
-  
 }
+
 // Sets emoji instead of list dots
 .emoji-list {
   list-style: none;
@@ -248,6 +287,18 @@ color: #ffffff;
   flex-wrap: wrap;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .project-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-box img {
+    margin-top: 1em;
+  }
+}
+
 .project-box img {
   display: flex;
   border-radius: 30px;
@@ -256,42 +307,55 @@ color: #ffffff;
 }
 
 .project-card {
- padding: 1em;
- padding-bottom: 4em;
- margin-bottom: 1em;
- opacity: 0.5;
- border-radius: 30px;
- min-width: 300px;
- max-width: 28%;
+  padding: 1em;
+  padding-bottom: 4em;
+  margin-bottom: 1em;
+  opacity: 0.5;
+  border-radius: 30px;
+  min-width: 300px;
+  max-width: 28%;
 }
+
+@media (max-width: 600px) {
+  .project-card {
+    max-width: 100%;
+    min-width: 100%;
+    padding-bottom: 2em;
+  }
+}
+
 // Adding colour to project cards
 .pink-project {
   @extend .project-card;
   background-color: var(--clr-1);
 }
+
 .orange-project {
   @extend .project-card;
   background-color: var(--clr-2);
 }
+
 .yellow-project {
   @extend .project-card;
   background-color: var(--clr-3);
 }
+
 .green-project {
   @extend .project-card;
   background-color: var(--clr-4);
 }
+
 .blue-project {
   @extend .project-card;
   background-color: var(--clr-5);
 }
+
 .purple-project {
   @extend .project-card;
   background-color: var(--clr-6);
 }
 
-
-//Animated infinte Scroll
+//Animated infinite Scroll
 .Skillsbox {
   display: flex;
   justify-content: center;
@@ -325,7 +389,6 @@ color: #ffffff;
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -335,7 +398,6 @@ color: #ffffff;
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-200%);
   }
@@ -384,6 +446,7 @@ color: #ffffff;
 .active-content {
   display: block;
 }
+
 .hover-effect:hover {
   color: #ECECEC;
 }
@@ -396,6 +459,13 @@ color: #ffffff;
   justify-content: center;
   align-items: center;
 }
+
 .footer img {
   margin: 0.5em;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
 }
