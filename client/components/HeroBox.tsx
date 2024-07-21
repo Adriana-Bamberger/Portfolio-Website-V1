@@ -21,8 +21,11 @@ function HeroBox() {
             Check out my projects below, or send me a message. Let's build
             something great together!
           </p>
-          <img src={img} alt="cartoon drawing of adriana by adriana" />
+          {/* <img src={img} alt="cartoon drawing of adriana by adriana" /> */}
         </div>
+        <a href=" " className="hero-button">
+          Click Me
+        </a>
       </div>
     </>
   )

@@ -127,6 +127,26 @@ body {
   }
 }
 
+.hero-button {
+  background-color: transparent;
+  color: #1E1E1E;
+  padding: 0.5em 1em;
+  border: 0.2em solid #ADD8E6;
+  border-radius: 1.2em;
+  margin-bottom: 0.4;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #ADD8E6;
+  color: #ffffff;
+}
 /* Animation for the border color */
 @keyframes animate-border {
   0% {
