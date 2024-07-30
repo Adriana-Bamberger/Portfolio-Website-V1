@@ -13,7 +13,7 @@ function HeaderBar() {
     <>
       <div className="header">
         {/* Title */}
-        <span className="header-title">Adriana Bamberger | Portfolio</span>
+        <span className="header-title">Adriana Bamberger | Portfolio - WIP </span>
         {/* Other Website Links */}
         <div className="buttons-container">
           {/* GitHub */}
