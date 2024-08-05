@@ -314,6 +314,41 @@ body {
   border-radius: 30px;
   min-width: 300px;
   max-width: 28%;
+  display: flex;
+  border-radius: 30px;
+  border-width: 1em;
+  max-width: 100%;
+}
+
+.project-card {
+  display: flex;
+  border-radius: 30px;
+  border-width: 1em;
+  max-width: 100%;
+  padding: 1em;
+  padding-bottom: 4em;
+  margin-bottom: 1em;
+  opacity: 0.5;
+  min-width: 300px;
+  max-width: 28%;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    max-width: 100%;
+    min-width: 100%;
+    padding-bottom: 2em;
+  }
+}
+
+// Adding colour to project cards
+.pink-project {
+  // Your existing styles for pink-project
 }
 
 @media (max-width: 600px) {
