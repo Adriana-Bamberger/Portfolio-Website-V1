@@ -1,103 +1,102 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 
 const ThreeShaderComponent: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null)
-  const [renderer, setRenderer] = React.useState<THREE.WebGLRenderer | null>(
-    null,
-  )
 
   useEffect(() => {
-    if (!containerRef.current) return
+    let container: HTMLElement
+    let camera: THREE.Camera, scene: THREE.Scene, renderer: THREE.WebGLRenderer
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let uniforms: { [key: string]: { type: string; value: any } }
+    let texture: THREE.Texture,
+      rtTexture: THREE.WebGLRenderTarget,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      rtTexture2: THREE.WebGLRenderTarget
+    const newmouse: { x: number; y: number } = { x: 0, y: 0 }
 
-    const container = containerRef.current
-    const width = container.clientWidth
-    const height = container.clientHeight
-
-    // Setup Three.js scene
-    const scene = new THREE.Scene()
-    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10)
-    camera.position.z = 1
-
-    const renderer = new THREE.WebGLRenderer()
-    renderer.setSize(width, height)
-    container.appendChild(renderer.domElement)
-    setRenderer(renderer)
-
-    // Load textures
     const loader = new THREE.TextureLoader()
+
     loader.setCrossOrigin('anonymous')
     loader.load(
       'https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/noise.png',
-      (texture) => {
+      (tex) => {
+        texture = tex
         texture.wrapS = THREE.RepeatWrapping
         texture.wrapT = THREE.RepeatWrapping
         texture.minFilter = THREE.LinearFilter
-
-        // Setup shaders
-        const uniforms = {
-          u_time: { value: 1.0 },
-          u_resolution: { value: new THREE.Vector2(width, height) },
-          u_noise: { value: texture },
-          u_buffer: { value: null as THREE.Texture | null },
-          u_mouse: { value: new THREE.Vector2(0, 0) },
-          u_renderpass: { value: false },
-        }
-
-        const vertexShader = `
-        void main() {
-          gl_Position = vec4(position, 1.0);
-        }
-      `
-
-        const fragmentShader = `
-        uniform vec2 u_resolution;
-        uniform vec2 u_mouse;
-        uniform float u_time;
-        uniform sampler2D u_noise;
-        uniform sampler2D u_buffer;
-        uniform bool u_renderpass;
-        // Your shader code here
-        void main() {
-          // Shader code
-        }
-      `
-
-        const material = new THREE.ShaderMaterial({
-          uniforms,
-          vertexShader,
-          fragmentShader,
-        })
-
-        const geometry = new THREE.PlaneBufferGeometry(2, 2)
-        const mesh = new THREE.Mesh(geometry, material)
-        scene.add(mesh)
-gaa
-        // Handle resizing
-        const onResize = () => {
-          const width = container.clientWidth
-          const height = container.clientHeight
-          renderer.setSize(width, height)
-          uniforms.u_resolution.value.set(width, height)
-        }
-        window.addEventListener('resize', onResize)
-        onResize()
-
-        // Animation loop
-        const animate = (time: number) => {
-          requestAnimationFrame(animate)
-          uniforms.u_time.value = time * 0.001
-          renderer.render(scene, camera)
-        }
-        requestAnimationFrame(animate)
-
-        // Clean up on unmount
-        return () => {
-          window.removeEventListener('resize', onResize)
-          container.removeChild(renderer.domElement)
-        }
+        init()
+        animate()
       },
     )
+
+    function init() {
+      container = containerRef.current!
+      camera = new THREE.Camera()
+      camera.position.z = 1
+
+      scene = new THREE.Scene()
+
+      const geometry = new THREE.PlaneGeometry(2, 2)
+
+      rtTexture = new THREE.WebGLRenderTarget(
+        window.innerWidth * 0.2,
+        window.innerHeight * 0.2,
+      )
+      // Remove the declaration and assignment of rtTexture2
+
+      uniforms = {
+        u_time: { type: 'f', value: 1.0 },
+        u_resolution: {
+          type: 'v2',
+          value: new THREE.Vector2(window.innerWidth, window.innerHeight),
+        },
+        u_noise: { type: 't', value: texture },
+        u_buffer: { type: 't', value: rtTexture.texture },
+        u_mouse: { type: 'v2', value: new THREE.Vector2() },
+        u_renderpass: { type: 'b', value: false },
+      }
+
+      const material = new THREE.ShaderMaterial({
+        uniforms: uniforms,
+        vertexShader: document.getElementById('vertexShader')!.textContent!,
+        fragmentShader: document.getElementById('fragmentShader')!.textContent!,
+      })
+
+      const mesh = new THREE.Mesh(geometry, material)
+      scene.add(mesh)
+
+      renderer = new THREE.WebGLRenderer()
+      renderer.setPixelRatio(window.devicePixelRatio)
+      renderer.setSize(window.innerWidth, window.innerHeight)
+      container.appendChild(renderer.domElement)
+
+      window.addEventListener('mousemove', onMouseMove, false)
+    }
+
+    function onMouseMove(event: MouseEvent) {
+      newmouse.x = (event.clientX / window.innerWidth) * 2 - 1
+      newmouse.y = -(event.clientY / window.innerHeight) * 2 + 1
+      uniforms.u_mouse.value.x = newmouse.x
+      uniforms.u_mouse.value.y = newmouse.y
+    }
+
+    function animate() {
+      requestAnimationFrame(animate)
+      render()
+    }
+
+    function render() {
+      uniforms.u_time.value += 0.05
+      renderer.render(scene, camera)
+    }
+
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove)
+      if (containerRef.current) {
+        containerRef.current.innerHTML = ''
+      }
+    }
   }, [])
 
   return (
