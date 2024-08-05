@@ -6,12 +6,12 @@ import InterestsBox from './InterestsBox'
 import SkillsBox from './SkillsBox'
 import Footer from './Footer'
 import HeroBox from './HeroBox'
-import Mousebound from './Mousebound'
+import ThreeShaderComponent from './ThreeShaderComponent'
 //This rendors the whole page
 function App() {
   return (
     <>
-      <Mousebound />
+      <ThreeShaderComponent />
       <HeaderBar />
       <HeroBox />
       <ProjectsBox />
