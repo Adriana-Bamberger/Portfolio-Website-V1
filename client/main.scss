@@ -30,7 +30,6 @@
 
 // Body ------------------------------
 body {
-  background-color: var(--clr-7);
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -45,7 +44,7 @@ body {
 
 // Header Bar ------------------------
 .header-title {
-  color: #ffffff;
+  color: var(--cl-11);
 }
 
 .header {

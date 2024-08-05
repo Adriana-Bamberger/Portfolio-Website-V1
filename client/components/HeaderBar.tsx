@@ -13,7 +13,10 @@ function HeaderBar() {
     <>
       <div className="header">
         {/* Title */}
-        <span className="header-title">Adriana Bamberger | Portfolio</span>
+        <span className="header-title">
+          <b>Adriana Bamberger | Portfolio </b>
+          {/* TODO: Change his to an H1 for the screen readers but fix the actual size and make it media dependable */}
+        </span>
         {/* Other Website Links */}
         <div className="buttons-container">
           {/* GitHub */}

@@ -6,10 +6,12 @@ import InterestsBox from './InterestsBox'
 import SkillsBox from './SkillsBox'
 import Footer from './Footer'
 import HeroBox from './HeroBox'
+import Mousebound from './Mousebound'
 //This rendors the whole page
 function App() {
   return (
     <>
+      <Mousebound />
       <HeaderBar />
       <HeroBox />
       <ProjectsBox />
