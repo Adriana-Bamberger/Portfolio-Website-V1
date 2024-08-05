@@ -49,5 +49,8 @@
   "prettier": {
     "semi": false,
     "singleQuote": true
-  }  
+  },
+  "dependencies": {
+    "three": "^0.167.1"
+  }
 }
