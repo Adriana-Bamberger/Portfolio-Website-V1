@@ -30,7 +30,8 @@
 
 // Body ------------------------------
 body {
-  background-color: var(--clr-7);
+  background: url('./Images/Background/Static-Twilight-Background@1x-0.7s-1920px-1080px.svg') no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
@@ -127,10 +128,6 @@ body {
   }
 }
 
-/* Glassmorphism card effect */
-.card {
-
-}
 // Boxs ---------------------------
 .box {
   backdrop-filter: blur(10px) saturate(100%);

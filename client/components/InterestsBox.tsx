@@ -2,7 +2,7 @@
 function InterestsBox() {
   return (
     <>
-      <div className="light-box">
+      <div className="box">
         <h1>Interests</h1>
         <ul className="emoji-list">
           <li>

@@ -25,7 +25,7 @@ import VSCode from '../Images/Skills/vscode.png'
 
 function SkillsBox() {
   return (
-    <div className="dark-box">
+    <div className="box">
       <div className="scroll imgBox imgScrollSpeed">
         <div>
           <img src={ArtRage} alt="" />
