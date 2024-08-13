@@ -112,6 +112,7 @@ body {
 
 // Boxs ---------------------------
 .box {
+  color: #ffffff;
   backdrop-filter: blur(4px) saturate(100%);
   // -webkit-backdrop-filter: blur(10px) saturate(100%);
   background-color: rgba(255, 255, 255, 0.284);
@@ -143,11 +144,16 @@ body {
   align-items: center;
 }
 .hero-box img {
-  position: absolute; // Add this line
-  right: 10px; // Adjust this value as needed to control the overflow
+  position: absolute; 
+  right: 30px; 
   transform: translateY(30%);
   max-width: 12em;
   align-items: center;
+}
+.subheading {
+  font-size: large;
+  font-style: italic;
+  padding-right: 8em; 
 }
 
 @media (max-width: 600px) {
@@ -157,17 +163,14 @@ body {
   }
 
   .hero-box img {
-    position: static; // Reset position for mobile view
+    position: static; 
     max-width: 100%;
     margin-top: 1em;
-    transform: none; // Reset transform for mobile view
+    transform: none;
   }
-}
-
-
-.subheading {
-  font-size: large;
-  font-style: italic;
+  .subheading {
+    padding-right: 0; 
+  }
 }
 
 // Sets emoji instead of list dots
@@ -186,7 +189,6 @@ body {
 
 .project-box {
   margin: 1em;
-  color: var(--clr-11);
   margin-bottom: 2em;
   border-radius: 30px;
   padding: 1em;
