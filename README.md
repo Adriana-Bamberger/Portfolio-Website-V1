@@ -4,7 +4,7 @@ https://adriana.bamberger.nz/
 Currently a casual work in progress.
 
 ## Learning Objectives
-I am exploring more UI design, 3D motion, and three.js eventually I'll build my own component library to connect to it.
+I am exploring more UI design, motion, and 3D Graphics.
 
 ## Technologies and Skills Used So Far
 - Typescript
@@ -16,6 +16,8 @@ I am exploring more UI design, 3D motion, and three.js eventually I'll build my 
 - Figma
 - Canva
 - Benchmarking
+- Npm Libraries
 
 ## Stretch Ideas
 - Component animation on scroll (part of next CSS update)
+- Movement in the 3D avatar
