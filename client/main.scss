@@ -41,11 +41,11 @@ body {
   width: 1px;
   height: 1px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 80px 80px rgba(255, 255, 255, 0.264);
+  background: rgba(255, 255, 255, 0.151);
+  box-shadow: 0 0 150px 150px rgba(255, 255, 255, 0.051);
   transform: translate(-50%, -50%);
   transition: opacity 0.1s ease, transform 0.1s ease;
-  opacity: 10;
+  opacity: 1;
 }
 // Header Bar ------------------------
 .header {
