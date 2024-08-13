@@ -37,18 +37,20 @@ body {
 }
 
 // Header Bar ------------------------
-.header-title {
-  color: #ffffff;
-}
-
 .header {
+  backdrop-filter: blur(4px) saturate(100%);
+  // -webkit-backdrop-filter: blur(10px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.284);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  padding-top: 0.3em;
   font-size: x-large;
-  // margin: 1em;
-  // border-radius: 30px;
-  // color: var(--clr-11);
-  // padding-bottom: 1%;
-  // padding-right: 1%;
-  // padding-top: 0.3%;
   display: flex; 
   justify-content: space-between; 
   align-items: center;
@@ -62,12 +64,15 @@ body {
   }
 }
 
+.header-title {
+  color: #ffffff;
+}
 // Social Media Buttons
 .social-icon {
   height: 2em;
   display: inline-flex;
   align-items: center;
-  justify-content: center; // Center horizontally
+  justify-content: center; 
   margin-right: 0.5em;
 }
 .social-icon__image {
@@ -111,7 +116,9 @@ body {
   // -webkit-backdrop-filter: blur(10px) saturate(100%);
   background-color: rgba(255, 255, 255, 0.284);
   border: 1px solid rgba(255, 255, 255, 0.125);
-  margin: 1em;
+  margin-top: 1em;
+  margin-left: 4em;
+  margin-right: 4em;
   margin-bottom: 2em;
   border-radius: 2em;
   padding-left: 3em;

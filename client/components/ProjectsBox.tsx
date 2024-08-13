@@ -4,7 +4,7 @@ import ProjectsCards from './ProjectCards'
 function ProjectsBox() {
   return (
     <>
-      <div className="dark-box">
+      <div className="box">
         <h1>Projects</h1>
         <ProjectsCards />
       </div>
