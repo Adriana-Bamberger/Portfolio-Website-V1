@@ -1,5 +1,6 @@
-// A box for my exprience infomation
 import { useState } from 'react'
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid'
+
 function ExprienceBox() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
@@ -91,7 +92,14 @@ function ExprienceBox() {
                 tabIndex={0}
                 className={isActive ? 'active-heading' : ''}
               >
-                <h3 className="hover-effect">{element.content}</h3>
+                <h3 className="hover-effect">
+                  {isActive ? (
+                    <ChevronUpIcon className="icon" />
+                  ) : (
+                    <ChevronDownIcon className="icon" />
+                  )}
+                  {element.content}
+                </h3>
               </div>
             )
           } else if (element.type === 'p') {
@@ -101,7 +109,7 @@ function ExprienceBox() {
               <p
                 key={index}
                 className={isActive ? 'active-content' : 'hidden-content'}
-                dangerouslySetInnerHTML={{ __html: element.content }} // Yes I'm using dangerously set inner html even though I know it's not best prastice. Just want to get this website up and running.
+                dangerouslySetInnerHTML={{ __html: element.content }}
               />
             )
           }
