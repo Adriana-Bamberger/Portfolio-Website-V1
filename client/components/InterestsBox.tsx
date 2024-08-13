@@ -44,12 +44,12 @@ function InterestsBox() {
           <li>
             <b>Choreographer, Scouting Variety Performance 2016, 2018, 2022,</b>{' '}
             Got volun-told from my scout group since I was a dancer to volunteer
-            for scouting auckland's performance crew as their choreographer ,
-            Designed and directed dance routines, ensuring they were engaging
-            and suitable for the cast. Led rehearsals, providing instructions
-            and feedback. Collaborated with the team to integrate choreography
-            with other show elements. Mentored young Scouts and managed live
-            performance routines.
+            for scouting auckland`&apos;`s performance crew as their
+            choreographer , Designed and directed dance routines, ensuring they
+            were engaging and suitable for the cast. Led rehearsals, providing
+            instructions and feedback. Collaborated with the team to integrate
+            choreography with other show elements. Mentored young Scouts and
+            managed live performance routines.
           </li>
         </ul>
       </div>

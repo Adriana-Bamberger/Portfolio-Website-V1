@@ -1,66 +1,79 @@
-//The header bar that has my title and buttons
-//Importing the Button images.
-import github from '../Images/github-logo.png'
+import Github from '../Images/github-logo.png'
 import Linkedin from '../Images/linkedin-black.png'
 import Instagram from '../Images/instagram-black.png'
 import StackOverflow from '../Images/stack-overflow-black.png'
 import GoodReads from '../Images/goodReads-black.png'
 import DownloadCV from '../Images/Download-cv.png'
+
+const socialLinks = [
+  {
+    href: 'https://github.com/Adriana-Bamberger',
+    src: Github,
+    alt: 'GitHub Icon (Black and White)',
+    className: 'social-icon--github',
+  },
+  {
+    href: 'https://nz.linkedin.com/in/adriana-bamberger-a58742205',
+    src: Linkedin,
+    alt: 'LinkedIn Icon (Black and White)',
+    className: 'social-icon--linkedIn',
+  },
+  {
+    href: 'https://www.instagram.com/adri.bamberger/?hl=en',
+    src: Instagram,
+    alt: 'Instagram Icon (Black and White)',
+    className: 'social-icon--instagram',
+  },
+  {
+    href: 'https://stackoverflow.com/users/23250670/adriana-bamberger',
+    src: StackOverflow,
+    alt: 'Stack Overflow Icon (Black and White)',
+    className: 'social-icon--stackOverflow',
+  },
+  {
+    href: 'https://www.goodreads.com/user/show/166058375-adriana-bamberger',
+    src: GoodReads,
+    alt: 'Good Reads Icon (Black and White)',
+    className: 'social-icon--goodReads',
+  },
+  {
+    href: 'https://drive.google.com/file/d/1iagpXERR6W1qiFfLOncFBi0Ogm_3chTY/view?usp=sharing',
+    src: DownloadCV,
+    alt: 'Download CV',
+    className: 'social-icon--downloadCv',
+  },
+]
+
 function HeaderBar() {
-  const cvDownloadUrl =
-    'https://drive.google.com/file/d/1iagpXERR6W1qiFfLOncFBi0Ogm_3chTY/view?usp=sharing'
   return (
-    <>
-      <div className="header">
-        {/* Title */}
-        <span className="header-title">
-          Adriana Bamberger | Portfolio - WIP{' '}
-        </span>
-        {/* Other Website Links */}
-        <div className="buttons-container">
-          {/* GitHub */}
+    <div className="header box">
+      <span className="header-title">Adriana Bamberger | Portfolio - WIP </span>
+      <div className="buttons-container">
+        {socialLinks.map((link) => (
           <a
-            href="https://github.com/Adriana-Bamberger"
+            key={link.href}
+            href={link.href}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="social-icon social-icon--github">
+            <div className={`social-icon ${link.className}`}>
               <img
                 className="social-icon__image"
-                src={github}
-                alt="GitHub Icon (Black and White)"
+                src={link.src}
+                alt={link.alt}
               />
             </div>
           </a>
-          {/* Linked In */}
-          <a
-            href="https://nz.linkedin.com/in/adriana-bamberger-a58742205"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="social-icon social-icon--linkedIn">
-              <img
-                className="social-icon__image"
-                src={Linkedin}
-                alt="Linked In Icon (Black and White)"
-              />
-            </div>
-          </a>
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com/adri.bamberger/?hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="social-icon social-icon--instagram">
-              <img
-                className="social-icon__image"
-                src={Instagram}
-                alt="Instagram Icon (Black and White)"
-              />
-            </div>
-          </a>
-          {/* Gmail is very slow to do the link, not sure it's worth having.
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default HeaderBar
+
+{
+  /* Gmail is very slow to do the link, not sure it's worth having.
           <a href="mailto:adriana@bamberger.nz">
             <div className="social-icon social-icon--gmail">
               <img
@@ -69,49 +82,5 @@ function HeaderBar() {
                 alt="Gmail Icon (Black and White)"
               />
             </div>
-          </a> */}
-          {/* Stack Overflow */}
-          <a
-            href="https://stackoverflow.com/users/23250670/adriana-bamberger"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="social-icon social-icon--stackOverflow">
-              <img
-                className="social-icon__image"
-                src={StackOverflow}
-                alt="Stack Overflow Icon (Black and White)"
-              />
-            </div>
-          </a>
-          {/* Good Reads */}
-          <a
-            href="https://www.goodreads.com/user/show/166058375-adriana-bamberger"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="social-icon social-icon--goodReads">
-              <img
-                className="social-icon__image"
-                src={GoodReads}
-                alt="Good Reads Icon (Black and White)"
-              />
-            </div>
-          </a>
-          {/* Download CV */}
-          <a href={cvDownloadUrl} target="_blank" rel="noopener noreferrer">
-            <div className="social-icon social-icon--downloadCv">
-              <img
-                className="social-icon__image"
-                src={DownloadCV}
-                alt="Download CV"
-              />
-            </div>
-          </a>
-        </div>
-      </div>
-    </>
-  )
+          </a> */
 }
-
-export default HeaderBar
