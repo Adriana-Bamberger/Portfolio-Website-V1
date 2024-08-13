@@ -35,11 +35,22 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
-
+.glow {
+  position: absolute;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 80px 80px rgba(255, 255, 255, 0.264);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.1s ease, transform 0.1s ease;
+  opacity: 10;
+}
 // Header Bar ------------------------
 .header {
   backdrop-filter: blur(4px) saturate(100%);
-  // -webkit-backdrop-filter: blur(10px) saturate(100%);
+  -webkit-backdrop-filter: blur(10px) saturate(100%); //For Safari
   background-color: rgba(255, 255, 255, 0.284);
   border: 1px solid rgba(255, 255, 255, 0.125);
   margin: 1em;
@@ -114,7 +125,7 @@ body {
 .box {
   color: #ffffff;
   backdrop-filter: blur(4px) saturate(100%);
-  // -webkit-backdrop-filter: blur(10px) saturate(100%);
+  -webkit-backdrop-filter: blur(10px) saturate(100%); // For Safari
   background-color: rgba(255, 255, 255, 0.284);
   border: 1px solid rgba(255, 255, 255, 0.125);
   margin-top: 1em;
@@ -242,11 +253,11 @@ body {
   opacity: 0.5;
   min-width: 300px;
   max-width: 28%;
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); // For Safari
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 @media (max-width: 600px) {
@@ -301,7 +312,7 @@ body {
   background-color: var(--clr-6);
 }
 
-//Animated infinite Scroll
+// Skills Box -----------------------
 .Skillsbox {
   @extend .box;
   padding-left: 1em;
@@ -345,7 +356,7 @@ body {
   --time: 40s; 
 }
 
-//Hiding and display text
+// Experience Box -----------------------
 .hidden-content {
   display: none;
 }
@@ -358,7 +369,14 @@ body {
   color: #ECECEC;
 }
 
-//Footer
+.icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+//Footer --------------------------------
 .footer {
   margin: 1em;
   display: flex;
@@ -379,16 +397,3 @@ body {
 }
 
 
-// The Under Curser Glow
-.glow {
-  position: absolute;
-  pointer-events: none;
-  width: 1px;
-  height: 1px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 80px 80px rgba(255, 255, 255, 0.264);
-  transform: translate(-50%, -50%);
-  transition: opacity 0.1s ease, transform 0.1s ease;
-  opacity: 10;
-}

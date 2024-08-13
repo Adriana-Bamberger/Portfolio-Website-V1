@@ -49,5 +49,8 @@
   "prettier": {
     "semi": false,
     "singleQuote": true
-  }  
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.5"
+  }
 }
