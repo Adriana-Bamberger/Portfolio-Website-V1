@@ -136,9 +136,17 @@ body {
 
 // Hero Box -----------------------
 .hero-box {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.hero-box img {
+  position: absolute; // Add this line
+  right: 10px; // Adjust this value as needed to control the overflow
+  transform: translateY(30%);
+  max-width: 12em;
   align-items: center;
 }
 
@@ -149,24 +157,13 @@ body {
   }
 
   .hero-box img {
+    position: static; // Reset position for mobile view
     max-width: 100%;
     margin-top: 1em;
+    transform: none; // Reset transform for mobile view
   }
 }
 
-.hero-box h1 {
-  align-items: flex-start;
-}
-
-.hero-box p {
-  align-items: flex-start;
-  margin-top: 0;
-}
-
-.hero-box img {
-  max-width: 12em;
-  align-items: center;
-}
 
 .subheading {
   font-size: large;
