@@ -23,37 +23,44 @@ import Tailwind from '../Images/Skills/tailwind.png'
 import Typescript from '../Images/Skills/typescript.png'
 import VSCode from '../Images/Skills/vscode.png'
 
+const images = [
+  ArtRage,
+  Canva,
+  ChatGPT,
+  ClipStudioPaint,
+  Docker,
+  Expo,
+  Express,
+  Figma,
+  Firebase,
+  Gemini,
+  GitHub,
+  Google,
+  HTML,
+  JS,
+  Knex,
+  MediBangPaint,
+  ReactNative,
+  React,
+  Sass,
+  SketchBook,
+  Tailwind,
+  Typescript,
+  VSCode,
+]
+
 function SkillsBox() {
   return (
-    <div className="dark-box">
-      <div className="scroll imgBox imgScrollSpeed">
-        <div>
-          <img src={ArtRage} alt="" />
-          <img src={Canva} alt="" />
-          <img src={ChatGPT} alt="" />
-          <img src={ClipStudioPaint} alt="" />
-          <img src={Docker} alt="" />
-          <img src={Expo} alt="" />
-          <img src={Express} alt="" />
-          <img src={Figma} alt="" />
-          <img src={Firebase} alt="" />
-          <img src={Gemini} alt="" />
-          <img src={GitHub} alt="" />
-          <img src={Google} alt="" />
-          <img src={HTML} alt="" />
-          <img src={JS} alt="" />
-          <img src={Knex} alt="" />
-          <img src={MediBangPaint} alt="" />
-          <img src={ReactNative} alt="" />
-          <img src={React} alt="" />
-          <img src={Sass} alt="" />
-          <img src={SketchBook} alt="" />
-          <img src={Tailwind} alt="" />
-          <img src={Typescript} alt="" />
-          <img src={VSCode} alt="" />
+    <div className="Skillsbox">
+      <div className="scroll imgScrollSpeed">
+        <div className="scroll-content">
+          {images.concat(images).map((img, index) => (
+            <img key={index} src={img} alt="" />
+          ))}
         </div>
       </div>
     </div>
   )
 }
+
 export default SkillsBox

@@ -7,7 +7,7 @@ import weChat from '../Images/wechat.png'
 function Footer() {
   return (
     <>
-      <div className="white-box footer">
+      <div className="box footer">
         <img
           className="social-icon__image"
           src={Messenger}

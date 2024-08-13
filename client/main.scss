@@ -30,24 +30,27 @@
 
 // Body ------------------------------
 body {
-  background-color: var(--clr-7);
+  background: url('./Images/Background/Static-Twilight-Background@1x-0.7s-1920px-1080px.svg') no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
 // Header Bar ------------------------
-.header-title {
-  color: #ffffff;
-}
-
 .header {
-  font-size: x-large;
+  backdrop-filter: blur(4px) saturate(100%);
+  // -webkit-backdrop-filter: blur(10px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.284);
+  border: 1px solid rgba(255, 255, 255, 0.125);
   margin: 1em;
-  border-radius: 30px;
-  color: var(--clr-11);
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-top: 0.3%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  font-size: x-large;
   display: flex; 
   justify-content: space-between; 
   align-items: center;
@@ -61,17 +64,21 @@ body {
   }
 }
 
+.header-title {
+  color: #ffffff;
+}
 // Social Media Buttons
 .social-icon {
   height: 2em;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; 
   margin-right: 0.5em;
 }
-
 .social-icon__image {
   opacity: 1;
   display: block;
-  height: 2em;
+  height: 100%;
 }
 
 .social-icon--github:hover {
@@ -102,56 +109,18 @@ body {
   content: url("./Images/Download-cv-hover.png");
 }
 
-// Buttons
-.button {
-  background-color: var(--btn-bg-color);
-  margin-left: 1em;
-  padding: 0.6em 1em;
-  border: 0.15em solid;
-  outline: none;
-  color: var(--btn-text-color);
-  text-decoration: none;
-  position: relative;
-  border-radius: 10px;
-  font-size: 0.7em;
-  cursor: pointer;
-  /* Animation for border */
-  animation: animate-border 10s linear infinite;
-}
-
-@media (max-width: 600px) {
-  .button {
-    margin-left: 0;
-    margin-top: 0.5em;
-    font-size: 0.8em;
-  }
-}
-
-/* Animation for the border color */
-@keyframes animate-border {
-  0% {
-    border-color: var(--clr-1);
-  }
-  25% {
-    border-color: var(--clr-2);
-  }
-  50% {
-    border-color: var(--clr-3);
-  }
-  75% {
-    border-color: var(--clr-4);
-  }
-  100% {
-    border-color: var(--clr-1);
-  }
-}
 
 // Boxs ---------------------------
 .box {
-  margin: 1em;
-  color: var(--clr-11);
+  backdrop-filter: blur(4px) saturate(100%);
+  // -webkit-backdrop-filter: blur(10px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.284);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-top: 1em;
+  margin-left: 4em;
+  margin-right: 4em;
   margin-bottom: 2em;
-  border-radius: 3em;
+  border-radius: 2em;
   padding-left: 3em;
   padding-bottom: 1em;
   padding-right: 1em;
@@ -167,9 +136,17 @@ body {
 
 // Hero Box -----------------------
 .hero-box {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.hero-box img {
+  position: absolute; // Add this line
+  right: 10px; // Adjust this value as needed to control the overflow
+  transform: translateY(30%);
+  max-width: 12em;
   align-items: center;
 }
 
@@ -180,85 +157,17 @@ body {
   }
 
   .hero-box img {
+    position: static; // Reset position for mobile view
     max-width: 100%;
     margin-top: 1em;
+    transform: none; // Reset transform for mobile view
   }
 }
 
-.hero-box h1 {
-  align-items: flex-start;
-}
-
-.hero-box p {
-  align-items: flex-start;
-  margin-top: 0;
-}
-
-.hero-box img {
-  max-width: 12em;
-  align-items: center;
-}
 
 .subheading {
   font-size: large;
   font-style: italic;
-}
-
-// The Rainbow GLOW 
-@property --gradient-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes rotation {
-  0% { --gradient-angle: 0deg; }
-  10% { --gradient-angle: 360deg; }
-}
-
-.dark-box-to-glow {
-  @extend .dark-box;
-  position: relative;
-}
-
-.glow::before,
-.glow::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    var(--clr-1),
-    var(--clr-2),
-    var(--clr-3),
-    var(--clr-4),
-    var(--clr-5),
-    var(--clr-6)
-  );
-  border-radius: inherit;
-  animation: rotation 20s linear infinite;
-}
-
-.glow::after {
-  filter: blur(1rem);
-}
-
-// Other Boxes ------------------------------
-.dark-box {
-  @extend .box;
-  background-color: var(--clr-9);
-  color: var(--clr-11);
-}
-
-.light-box {
-  @extend .box;
-  background-color: var(--clr-8);
-}
-
-.white-box {
-  @extend .box;
-  background-color: var(--clr-9);
 }
 
 // Sets emoji instead of list dots
@@ -314,6 +223,41 @@ body {
   border-radius: 30px;
   min-width: 300px;
   max-width: 28%;
+  display: flex;
+  border-radius: 30px;
+  border-width: 1em;
+  max-width: 100%;
+}
+
+.project-card {
+  display: flex;
+  border-radius: 30px;
+  border-width: 1em;
+  max-width: 100%;
+  padding: 1em;
+  padding-bottom: 4em;
+  margin-bottom: 1em;
+  opacity: 0.5;
+  min-width: 300px;
+  max-width: 28%;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    max-width: 100%;
+    min-width: 100%;
+    padding-bottom: 2em;
+  }
+}
+
+// Adding colour to project cards
+.pink-project {
+  // Your existing styles for pink-project
 }
 
 @media (max-width: 600px) {
@@ -357,11 +301,13 @@ body {
 
 //Animated infinite Scroll
 .Skillsbox {
+  @extend .box;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #000;
+
   flex-direction: column;
 }
 
@@ -370,72 +316,31 @@ body {
   display: flex;
   width: 100%;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
 }
 
-.scroll div {
+.scroll-content {
   display: flex;
   white-space: nowrap;
   animation: scroll var(--time) linear infinite;
-  animation-delay: calc(var(--time) * -1);
 }
 
-.scroll div:nth-child(2) {
-  animation: scroll2 var(--time) linear infinite;
-  animation-delay: calc(var(--time) / -2);
+.scroll-content img {
+  max-height: 88px;
+  transform: scale(0.8);
+  margin: 0 10px;
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll2 {
-  0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-50%);
   }
 }
 
-.scroll div span {
-  display: inline-flex;
-  margin: 10px;
-  letter-spacing: 0.2em;
-  background: #333;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
-.scroll div span:hover {
-  background: #3fd2f9;
-  cursor: pointer;
-}
-
-.imgBox div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imgBox img {
-  max-width: 100px;
-  transform: scale(0.8);
-}
-
-.textScrollSpeed {
-  --time: 20s;
-}
-
 .imgScrollSpeed {
-  --time: 25s;
+  --time: 40s; 
 }
 
 //Hiding and display text
@@ -462,10 +367,26 @@ body {
 
 .footer img {
   margin: 0.5em;
+  max-width: 3em;
 }
 
 @media (max-width: 600px) {
   .footer {
     flex-direction: column;
   }
+}
+
+
+// The Under Curser Glow
+.glow {
+  position: absolute;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 80px 80px rgba(255, 255, 255, 0.264);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.1s ease, transform 0.1s ease;
+  opacity: 10;
 }

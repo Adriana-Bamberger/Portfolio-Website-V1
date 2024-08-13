@@ -78,7 +78,7 @@ function ExprienceBox() {
   ]
   return (
     <>
-      <div className="light-box">
+      <div className="box">
         <h1>Experience</h1>
         {experiences.map((element, index) => {
           if (element.type === 'h3') {
