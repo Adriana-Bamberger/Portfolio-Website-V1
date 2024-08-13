@@ -127,29 +127,17 @@ body {
   }
 }
 
-/* Animation for the border color */
-@keyframes animate-border {
-  0% {
-    border-color: var(--clr-1);
-  }
-  25% {
-    border-color: var(--clr-2);
-  }
-  50% {
-    border-color: var(--clr-3);
-  }
-  75% {
-    border-color: var(--clr-4);
-  }
-  100% {
-    border-color: var(--clr-1);
-  }
-}
+/* Glassmorphism card effect */
+.card {
 
+}
 // Boxs ---------------------------
 .box {
+  backdrop-filter: blur(10px) saturate(100%);
+  -webkit-backdrop-filter: blur(10px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.125);
   margin: 1em;
-  color: var(--clr-11);
   margin-bottom: 2em;
   border-radius: 3em;
   padding-left: 3em;
@@ -202,63 +190,6 @@ body {
 .subheading {
   font-size: large;
   font-style: italic;
-}
-
-// The Rainbow GLOW 
-@property --gradient-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes rotation {
-  0% { --gradient-angle: 0deg; }
-  10% { --gradient-angle: 360deg; }
-}
-
-.dark-box-to-glow {
-  @extend .dark-box;
-  position: relative;
-}
-
-.glow::before,
-.glow::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    var(--clr-1),
-    var(--clr-2),
-    var(--clr-3),
-    var(--clr-4),
-    var(--clr-5),
-    var(--clr-6)
-  );
-  border-radius: inherit;
-  animation: rotation 20s linear infinite;
-}
-
-.glow::after {
-  filter: blur(1rem);
-}
-
-// Other Boxes ------------------------------
-.dark-box {
-  @extend .box;
-  background-color: var(--clr-9);
-  color: var(--clr-11);
-}
-
-.light-box {
-  @extend .box;
-  background-color: var(--clr-8);
-}
-
-.white-box {
-  @extend .box;
-  background-color: var(--clr-9);
 }
 
 // Sets emoji instead of list dots
@@ -503,4 +434,19 @@ body {
   .footer {
     flex-direction: column;
   }
+}
+
+
+// The Under Curser Glow
+.glow {
+  position: absolute;
+  pointer-events: none;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.1s ease, transform 0.1s ease;
+  opacity: 10;
 }

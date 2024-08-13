@@ -4,7 +4,7 @@ import img from '../Images/Adrib_logo.png'
 function HeroBox() {
   return (
     <>
-      <div className="dark-box-to-glow glow">
+      <div className="box">
         <p className="subheading">
           <b>Kia ora! </b>I'm a Kiwi full-stack developer in Auckland who loves
           blending creativity with technology.{' '}
