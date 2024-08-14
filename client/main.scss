@@ -244,21 +244,25 @@ body {
 
 .project-card {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 30px;
   border-width: 1em;
   max-width: 100%;
   padding: 1em;
   padding-bottom: 4em;
   margin-bottom: 1em;
-  opacity: 0.5;
+  opacity: 1;
   min-width: 300px;
   max-width: 28%;
-  background: rgba(255, 255, 255, 0.2); 
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); // For Safari
-  border: 1px solid rgba(255, 255, 255, 0.3); 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(4px) saturate(100%);
+  -webkit-backdrop-filter: blur(10px) saturate(100%); // For Safari
+  background-color: rgba(255, 255, 255, 0.284);
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
+  // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+
 
 @media (max-width: 600px) {
   .project-card {
@@ -266,50 +270,6 @@ body {
     min-width: 100%;
     padding-bottom: 2em;
   }
-}
-
-// Adding colour to project cards
-.pink-project {
-  // Your existing styles for pink-project
-}
-
-@media (max-width: 600px) {
-  .project-card {
-    max-width: 100%;
-    min-width: 100%;
-    padding-bottom: 2em;
-  }
-}
-
-// Adding colour to project cards
-.pink-project {
-  @extend .project-card;
-  background-color: var(--clr-1);
-}
-
-.orange-project {
-  @extend .project-card;
-  background-color: var(--clr-2);
-}
-
-.yellow-project {
-  @extend .project-card;
-  background-color: var(--clr-3);
-}
-
-.green-project {
-  @extend .project-card;
-  background-color: var(--clr-4);
-}
-
-.blue-project {
-  @extend .project-card;
-  background-color: var(--clr-5);
-}
-
-.purple-project {
-  @extend .project-card;
-  background-color: var(--clr-6);
 }
 
 // Skills Box -----------------------
@@ -428,31 +388,4 @@ body {
   .project-card {
     flex: 1 1 100%;
   }
-}
-
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-content {
-  background-color: #fff;
-  padding: 2em;
-  border-radius: 10px;
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5em;
-  cursor: pointer;
 }
