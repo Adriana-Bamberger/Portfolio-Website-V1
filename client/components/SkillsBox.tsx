@@ -55,7 +55,7 @@ function SkillsBox() {
       <div className="scroll imgScrollSpeed">
         <div className="scroll-content">
           {images.concat(images).map((img, index) => (
-            <img key={index} src={img} alt="" />
+            <img key={index} src={img} alt="" loading="lazy" />
           ))}
         </div>
       </div>
