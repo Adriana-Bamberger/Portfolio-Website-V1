@@ -19,7 +19,11 @@ function HeroBox() {
           Check out my projects below, or send me a message. Let&apos;s build
           something great together!
         </p>
-        <img src={img} alt="cartoon drawing of adriana by adriana" />
+        <img
+          src={img}
+          alt="cartoon drawing of adriana by adriana"
+          loading="lazy"
+        />
         {/* </div> */}
       </div>
     </>
