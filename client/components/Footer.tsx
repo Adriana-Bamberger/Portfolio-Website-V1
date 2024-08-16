@@ -12,11 +12,13 @@ function Footer() {
           className="social-icon__image"
           src={Messenger}
           alt="Messenger Logo Button"
+          loading="lazy"
         />
         <img
           className="social-icon__image"
           src={Insta}
           alt="Insta Logo Button"
+          loading="lazy"
         />
         <h3>
           Tāmaki Makaurau, Aotearoa | New Zealand Citizen | adriana@bamberger.nz
@@ -26,11 +28,13 @@ function Footer() {
           className="social-icon__image"
           src={linkedIn}
           alt="LinkedIn Logo Button"
+          loading="lazy"
         />
         <img
           className="social-icon__image"
           src={weChat}
           alt="We Chat Logo Button"
+          loading="lazy"
         />
       </div>
     </>
