@@ -12,7 +12,7 @@ function ProjectDetails() {
   return (
     <div>
       <h1>{project.title}</h1>
-      <img src={project.image} alt={project.title} />
+      <img src={project.image} alt={project.title} loading="lazy" />
       <p>{project.description}</p>
     </div>
   )
