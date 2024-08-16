@@ -22,6 +22,7 @@ function ProjectsCards() {
             src={project.image}
             alt={project.title}
             className="project-img"
+            loading="lazy"
           />
           <h2>{project.title}</h2>
           <hr />
