@@ -61,6 +61,7 @@ function HeaderBar() {
                 className="social-icon__image"
                 src={link.src}
                 alt={link.alt}
+                loading="lazy"
               />
             </div>
           </a>
