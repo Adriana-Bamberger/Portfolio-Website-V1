@@ -10,6 +10,7 @@ I am awaiting permissions from the holder of part of my custom domain to upload 
 I am exploring more UI design, motion, and 3D Graphics.
 
 ## Technologies and Skills Used So Far
+- React
 - Typescript
 - Sass
 - Vite
