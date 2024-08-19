@@ -8,11 +8,13 @@ import Footer from './Footer'
 import HeroBox from './HeroBox'
 import GlowEffect from '../GlowEffect'
 import ProjectDetails from './ProjectDetails'
+import BackgroundSVG from './BackgroundSVG'
 
 function App() {
   return (
     <Router>
       <GlowEffect />
+      <BackgroundSVG />
       <HeaderBar />
       <Routes>
         <Route
