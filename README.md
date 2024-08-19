@@ -1,6 +1,5 @@
 # Portfolio-Website
 https://adriana.bamberger.nz/
-Currently a casual work in progress.
 
 ## Status
 Currently a WIP. Some content is yet to be added. 
