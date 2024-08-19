@@ -4,7 +4,7 @@ export const projects = [
     id: '1',
     title: 'WedPro',
     description: 'Details about Project One.',
-    image: 'client/Images/Projects/Wedpro-Clear.png',
+    image: 'client/Images/Projects/WedPro-Clear.png',
   },
   {
     id: '2',
