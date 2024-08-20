@@ -1,9 +1,9 @@
-import Github from '../Images/github-logo.png'
-import Linkedin from '../Images/linkedin-black.png'
-import Instagram from '../Images/instagram-black.png'
-import StackOverflow from '../Images/stack-overflow-black.png'
-import GoodReads from '../Images/goodReads-black.png'
-import DownloadCV from '../Images/Download-cv.png'
+import Github from '../Images/Social Icons/github-logo.png'
+import Linkedin from '../Images/Social Icons/linkedin-black.png'
+import Instagram from '../Images/Social Icons/instagram-black.png'
+import StackOverflow from '../Images/Social Icons/stack-overflow-black.png'
+import GoodReads from '../Images/Social Icons/goodReads-black.png'
+import DownloadCV from '../Images/Social Icons/CV-Download-Icon-black.png'
 
 const socialLinks = [
   {
