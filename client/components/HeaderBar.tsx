@@ -39,7 +39,7 @@ function HeaderBar() {
       className: 'social-icon--goodReads',
     },
     {
-      href: 'https://drive.google.com/file/d/1iagpXERR6W1qiFfLOncFBi0Ogm_3chTY/view?usp=sharing',
+      href: 'https://drive.google.com/file/d/1W6KXj_fydQK3ZhKZGCfOXkeCd5zt-6te/view?usp=sharing',
       src: DownloadCV,
       alt: 'Download CV',
       className: 'social-icon--downloadCv',
