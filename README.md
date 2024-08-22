@@ -21,6 +21,7 @@ I am exploring more UI design, motion, and 3D Graphics.
 - Canva
 - Benchmarking
 - Npm Libraries
+- Creating animated svg
 
 ## Stretch Ideas
 - Component animation on scroll (part of next CSS update)
