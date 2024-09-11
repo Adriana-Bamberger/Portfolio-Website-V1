@@ -1,24 +1,6 @@
-// a box with a opening statment, my img and quick link buttons
-import { useEffect, useRef } from 'react'
 import img from '../Images/Advertars/3D-Advtar.png'
 
 function HeroBox() {
-  const imgRef = useRef<HTMLImageElement>(null)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (imgRef.current) {
-        const scrollPosition = window.scrollY
-        imgRef.current.style.transform = `translateY(30%) rotate(${scrollPosition}deg)`
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
   return (
     <>
       <div className="box hero-box">
@@ -37,7 +19,6 @@ function HeroBox() {
           something great together!
         </p>
         <img
-          ref={imgRef}
           src={img}
           alt="cartoon drawing of adriana by adriana"
           loading="lazy"
