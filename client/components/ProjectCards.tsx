@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom'
 import { projects } from './projectsData'
 
 function ProjectsCards() {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
-  const handleClick = (id: string) => {
-    navigate(`/project-details/${id}`)
-  }
+  // const handleClick = (id: string) => {
+  //   navigate(`/project-details/${id}`)
+  // }
 
   return (
     <div className="projects-container">
@@ -16,7 +16,7 @@ function ProjectsCards() {
         <div
           key={project.id}
           className="project-card"
-          onClick={() => handleClick(project.id)}
+          // onClick={() => handleClick(project.id)}
         >
           <img
             src={project.image}
@@ -28,6 +28,18 @@ function ProjectsCards() {
             <h2>{project.title}</h2>
             <hr />
             <p>{project.description}</p>
+            <div>
+              {project.images &&
+                project.images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`${project.title} ${index + 1}`}
+                    loading="lazy"
+                    style={{ height: '50px', margin: '5px' }}
+                  />
+                ))}
+            </div>
           </div>
         </div>
       ))}
