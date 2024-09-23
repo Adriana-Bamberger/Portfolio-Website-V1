@@ -200,10 +200,18 @@ body {
   align-items: center;
 }
 
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
 .subheading {
-  font-size: large;
-  font-style: italic;
-  padding-right: 8em;
+  font-size: x-large;
+  padding-right: 10em;
+}
+
+.hero-box p {
+  font-size: medium;
+  padding-right: 10em;
 }
 
 @media (max-width: 600px) {

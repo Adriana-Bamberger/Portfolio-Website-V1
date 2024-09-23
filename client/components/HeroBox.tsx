@@ -4,20 +4,27 @@ function HeroBox() {
   return (
     <>
       <div className="box hero-box">
-        <p className="subheading">
-          <b>Kia ora! </b>I&apos;m a Kiwi full-stack developer in Auckland who
-          loves blending creativity with technology. <br />
-          I started coding at twelve and honed my skills at Dev Academy
-          Aotearoa.
-          <br />
-          <br />
-          My background in costume creation, retail, and Scouting has given me
-          strong collaboration and communication skills. <br />
-          I love supportive, collaborative environments and am always eager to
-          learn and grow. <br />
-          Check out my projects below, or send me a message. Let&apos;s build
-          something great together!
-        </p>
+        <div className="tetx-continer">
+          <p className="subheading">
+            <b>
+              <em>Kia ora! Hallo! Hiya! </em>
+            </b>{' '}
+          </p>
+          <p>
+            {' '}
+            I&apos;m a kiwi web developer who loves to code, design, and solve
+            problems as much as I love stitching together creative projects -
+            and trust me, I&apos;ve sewn up plenty!
+            <br /> Before web development, I ran my own professional costuming
+            business, so bringing ideas to life is kind of my thing.
+            <br />
+            <br /> Whether it&apos;s front-end or full-stack, I&apos;m all about
+            turning ideas into pixel-perfect, user-friendly creations. I enjoy
+            collaborating with awesome people, thinking outside the (code)box,
+            and building tools that actually make life easier. Always learning,
+            always growing—and having fun while I&apos;m at it!
+          </p>
+        </div>
         <img
           src={img}
           alt="cartoon drawing of adriana by adriana"
