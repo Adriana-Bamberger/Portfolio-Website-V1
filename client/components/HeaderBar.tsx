@@ -1,9 +1,9 @@
 import SocialIcon from './SocialIcon'
 import Github from '../Images/Social Icons/github-logo.png'
-import Linkedin from '../Images/Social Icons/linkedin-black.png'
-import Instagram from '../Images/Social Icons/instagram-black.png'
-import StackOverflow from '../Images/Social Icons/stack-overflow-black.png'
-import GoodReads from '../Images/Social Icons/goodReads-black.png'
+import Linkedin from '../Images/Social Icons/linkedin.png'
+import Instagram from '../Images/Social Icons/instagram.png'
+import StackOverflow from '../Images/Social Icons/stack-overflow.png'
+import GoodReads from '../Images/Social Icons/goodReads.png'
 import DownloadCV from '../Images/Social Icons/CV-Download-Icon-black.png'
 
 function HeaderBar() {
@@ -47,7 +47,9 @@ function HeaderBar() {
   ]
   return (
     <div className="header">
-      <span className="header-title">Adriana Bamberger | Portfolio </span>
+      <span>
+        <h1>Adriana Bamberger | Portfolio</h1>
+      </span>
       <div className="buttons-container">
         {socialLinks.map((link) => (
           <SocialIcon
