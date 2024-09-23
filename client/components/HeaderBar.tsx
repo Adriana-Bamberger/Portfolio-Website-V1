@@ -47,7 +47,7 @@ function HeaderBar() {
   ]
   return (
     <div className="header">
-      <span className="header-title">Adriana Bamberger | Portfolio - WIP </span>
+      <span className="header-title">Adriana Bamberger | Portfolio </span>
       <div className="buttons-container">
         {socialLinks.map((link) => (
           <SocialIcon
