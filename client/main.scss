@@ -329,14 +329,14 @@ body {
 .projects-container {
   color: #ffffff;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // Create responsive columns
-  gap: 1em; // Add gap between grid items
+  grid-template-columns: repeat(auto-fit, minmax(2, 1fr)); 
+  gap: 1em; 
   margin: 2.2em;
 }
 
 .project-card {
   display: flex;
-  flex-direction: row; // Keep row direction for content
+  flex-direction: row; 
   align-items: center;
   border-radius: 30px;
   border-width: 1em;
@@ -349,6 +349,11 @@ body {
   background-color: rgba(255, 255, 255, 0.284);
   border: 1px solid rgba(255, 255, 255, 0.125);
   -webkit-backdrop-filter: blur(10px) saturate(100%);
+}
+
+.project-card:nth-child(even) {
+  flex-direction: row-reverse; // Reverse the order for even cards
+  padding-left: 2em;
 }
 
 .project-img {
