@@ -55,7 +55,7 @@ function HeaderBar() {
             href={link.href}
             src={link.src}
             alt={link.alt}
-            className={link.className}
+            className={`social-icon ${link.className}`}
           />
         ))}
       </div>
