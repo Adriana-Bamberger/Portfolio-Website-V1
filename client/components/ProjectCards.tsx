@@ -24,9 +24,11 @@ function ProjectsCards() {
             className="project-img"
             loading="lazy"
           />
-          <h2>{project.title}</h2>
-          <hr />
-          <p>{project.description}</p>
+          <div className="project-content">
+            <h2>{project.title}</h2>
+            <hr />
+            <p>{project.description}</p>
+          </div>
         </div>
       ))}
     </div>
