@@ -66,38 +66,37 @@ body {
   margin-right: 1.5em;
   margin-bottom: 1em;
   border-radius: 2em;
-  padding-left: 1.5em;
-  padding-right: 1em;
-  padding-top: 0.3em;
-  font-size: x-large;
-  display: flex; 
-  justify-content: space-between; 
+  padding: 0.4em 1.0em; 
+  font-size: xx-large;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1em;
-  }
+  height: 100%; 
 }
 
 .header-title {
-  color: #ffffff;
+  font-size: 1.0em;
+  font-weight: bold;
 }
-// Social Media Buttons
+
+.buttons-container {
+  display: flex;
+  gap: 0.5em; 
+}
+
 .social-icon {
-  height: 2em;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center; 
-  margin-right: 0.5em;
+  justify-content: center;
+  width: 50px;
+  height: 50px; 
+  margin: 0 0.1em; 
 }
-.social-icon__image {
-  opacity: 1;
-  display: block;
+
+.social-icon img {
+  width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .social-icon--github:hover {
