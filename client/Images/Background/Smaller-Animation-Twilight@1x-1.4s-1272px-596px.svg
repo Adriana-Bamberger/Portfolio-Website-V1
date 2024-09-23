@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1272 596" preserveAspectRatio="xMidYMid" width="1272" height="596" style="shape-rendering: auto; display: block; background: rgb(210, 211, 212);" xmlns:xlink="http://www.w3.org/1999/xlink"><g><defs>
-<linearGradient y2="1" y1="0" x2="0" x1="0" id="lg-0.8607586679282195">
-  <stop offset="0" stop-color="#080808"></stop>
-  <stop offset="1" stop-color="#6d6d6d"></stop>
-</linearGradient>
-<linearGradient y2="0" y1="1" x2="1" x1="0" id="lg-0.2790277433328133">
-  <stop offset="0" stop-opacity="1" stop-color="#ffffff"></stop>
-  <stop offset="1" stop-opacity="0" stop-color="#ffffff"></stop>
-</linearGradient>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1272 596" preserveAspectRatio="xMidYMid" width="1272" height="596" style="shape-rendering: auto; display: block; background: #080808;" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+    <linearGradient y2="1" y1="0" x2="0" x1="0" id="lg-0.8607586679282195">
+      <stop offset="0" stop-color="#080808"></stop>
+      <stop offset="1" stop-color="#6d6d6d"></stop>
+    </linearGradient>
+    <linearGradient y2="0" y1="1" x2="1" x1="0" id="lg-0.2790277433328133">
+      <stop offset="0" stop-opacity="1" stop-color="#ffffff"></stop>
+      <stop offset="1" stop-opacity="0" stop-color="#ffffff"></stop>
+    </linearGradient>
+  </defs>
 <rect fill="url(#lg-0.8607586679282195)" height="596" width="1272" y="0" x="0"></rect><circle fill-opacity="0.6374912685149057" fill="#ffffff" r="0.8482846034117444" cy="240.06133773901794" cx="1181.9651241406286">
   <animate values="0.8482846034117444;0.4241423017058722;1.1027699844352676;0.8482846034117444" begin="0s" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1" keyTimes="0;0.333;0.667;1" repeatCount="indefinite" dur="50s" attributeName="r"></animate>
 </circle><circle fill-opacity="0.26969463121468173" fill="#ffffff" r="1.0634231681207307" cy="483.624444217833" cx="282.7125241664551">
