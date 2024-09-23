@@ -11,6 +11,7 @@ export const projects = [
     description:
       'A web application for wedding planning, built with Laravel, Filament and Vue.',
     image: wedProImg,
+    images: [wedProImg1, wedProImg2],
   },
   {
     id: '2',
