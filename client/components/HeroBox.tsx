@@ -4,7 +4,7 @@ function HeroBox() {
   return (
     <>
       <div className="box hero-box">
-        <div className="tetx-continer">
+        <div className="text-continer">
           <p className="subheading">
             <b>
               <em>Kia ora! Hallo! Hiya! </em>

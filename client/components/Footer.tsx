@@ -32,28 +32,22 @@ const Footer: React.FC = () => {
   const lastTwoLinks = socialLinks.slice(2)
 
   return (
-    <div className="box footer">
-      {firstTwoLinks.map((link) => (
-        <SocialIcon
-          key={link.href}
-          href={link.href}
-          src={link.src}
-          alt={link.alt}
-        />
-      ))}
-      <h3>
-        Tāmaki Makaurau, Aotearoa | New Zealand Citizen | adriana@bamberger.nz |
-        022 470 6342
-      </h3>
-      {lastTwoLinks.map((link) => (
-        <SocialIcon
-          key={link.href}
-          href={link.href}
-          src={link.src}
-          alt={link.alt}
-        />
-      ))}
-    </div>
+    <footer className="box footer">
+      <div className="footer-content">
+        <div className="social-icons-left">
+          <SocialIcon href={socialLinks[0].href} src={socialLinks[0].src} alt={socialLinks[0].alt} />
+          <SocialIcon href={socialLinks[1].href} src={socialLinks[1].src} alt={socialLinks[1].alt} />
+        </div>
+        <div className="footer-text">
+          <p>Tāmaki Makaurau, Aotearoa | New Zealand Citizen | adriana@bamberger.nz |
+        022 470 6342</p>
+        </div>
+        <div className="social-icons-right">
+          <SocialIcon href={socialLinks[2].href} src={socialLinks[2].src} alt={socialLinks[2].alt} />
+          <SocialIcon href={socialLinks[3].href} src={socialLinks[3].src} alt={socialLinks[3].alt} />
+        </div>
+      </div>
+    </footer>
   )
 }
 

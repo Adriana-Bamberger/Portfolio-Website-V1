@@ -206,12 +206,12 @@ body {
 }
 .subheading {
   font-size: x-large;
-  padding-right: 10em;
+  padding-right: 12em;
 }
 
 .hero-box p {
   font-size: medium;
-  padding-right: 10em;
+  padding-right: 12em;
 }
 
 @media (max-width: 600px) {
@@ -252,8 +252,7 @@ body {
 // Skills Box -----------------------
 .Skillsbox {
   @extend .box;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,9 +274,9 @@ body {
 }
 
 .scroll-content img {
-  max-height: 88px;
+  max-height: 55px;
   transform: scale(0.8);
-  margin: 0 10px;
+  margin: 0px 5px;
 }
 
 @keyframes scroll {
@@ -290,7 +289,7 @@ body {
 }
 
 .imgScrollSpeed {
-  --time: 40s;
+  --time: 30s;
 }
 
 // Experience Box -----------------------
@@ -314,22 +313,44 @@ body {
 }
 
 // Footer ------------------------------
+scss
 .footer {
-  margin: 1em;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: center; 
+  padding: 1em;
+}
+
+.footer-content { 
+  display: flex;
   align-items: center;
 }
 
-.footer img {
-  margin: 0.5em;
-  max-width: 3em;
+.social-icons-left {
+  display: flex;
+  margin-right: 1em; 
+  gap: 1em;
+}
+
+.social-icons-right {
+  display: flex;
+  margin-left: 1em;  
+  gap: 1em;
+}
+
+.footer-text {
+  text-align: center; 
 }
 
 @media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
+  .footer-content {
+    flex-direction: column; 
+  }
+
+  .social-icons-left,
+  .social-icons-right {
+    margin: 0; 
+    justify-content: center; 
+    margin-bottom: 1em;
   }
 }
 
@@ -338,8 +359,10 @@ body {
   color: #ffffff;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(2, 1fr)); 
-  gap: 1em; 
-  margin: 2.2em;
+  // gap: 1em; 
+  // margin: 2.2em;
+  margin-left: 2.2em;
+  margin-right: 2.2em;
 }
 
 .project-card {
