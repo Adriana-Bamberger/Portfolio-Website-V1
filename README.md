@@ -3,12 +3,12 @@ https://adriana.bamberger.nz/
 
 ## Status
 Currently a WIP. Some content is yet to be added. 
-Currently exploring creating 3D animations.
+Currently exploring creating svg animations.
 
 ## Learning Objectives
 I am exploring more UI design, motion, and 3D Graphics.
 
-## Technologies and Skills Used So Far
+## Technologies and Skills Experimented With So Far
 - React
 - Typescript
 - Sass
@@ -20,8 +20,11 @@ I am exploring more UI design, motion, and 3D Graphics.
 - Canva
 - Benchmarking
 - Npm Libraries
-- Creating animated svg
+- Creating animated svgs
+- Three.js
+- SVG Filters
 
 ## Stretch Ideas
 - Component animation on scroll (part of next CSS update)
 - Movement in the 3D avatar
+- Component transformations on click.
