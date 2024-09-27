@@ -22,6 +22,12 @@ import SketchBook from '../Images/Skills/sketchbook.png'
 import Tailwind from '../Images/Skills/tailwind.png'
 import Typescript from '../Images/Skills/typescript.png'
 import VSCode from '../Images/Skills/vscode.png'
+import Filament from '../Images/Skills/Filament.png'
+import GithubDesktop from '../Images/Skills/Github-Desktop.png'
+import Laragon from '../Images/Skills/Laragon.png'
+import Laravel from '../Images/Skills/Laravel.png'
+import MySQL from '../Images/Skills/My-SQL-Workbench.png'
+import Vue from '../Images/Skills/Vue.png'
 
 const images = [
   ArtRage,
@@ -47,6 +53,13 @@ const images = [
   Tailwind,
   Typescript,
   VSCode,
+  Filament,
+  GithubDesktop,
+  Laragon,
+  Laravel,
+  MySQL,
+  Vue,
+
 ]
 
 function SkillsBox() {
