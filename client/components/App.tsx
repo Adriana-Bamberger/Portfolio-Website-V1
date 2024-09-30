@@ -7,32 +7,19 @@ import SkillsBox from './SkillsBox'
 import Footer from './Footer'
 import HeroBox from './HeroBox'
 import GlowEffect from '../GlowEffect'
-import ProjectDetails from './ProjectDetails'
-import BackgroundSVG from './BackgroundSVG'
 
 function App() {
   return (
-    <Router>
+    <div className="background-container">
       <GlowEffect />
-      <BackgroundSVG />
       <HeaderBar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <HeroBox />
-              <ProjectsBox />
-              <ExperienceBox />
-              <SkillsBox />
-              <InterestsBox />
-            </>
-          }
-        />
-        <Route path="/project-details/:id" element={<ProjectDetails />} />
-      </Routes>
+      <HeroBox />
+      <ProjectsBox />
+      <ExperienceBox />
+      <SkillsBox />
+      <InterestsBox />
       <Footer />
-    </Router>
+    </div>
   )
 }
 
