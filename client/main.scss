@@ -34,31 +34,31 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-image: url('client/Images/Background/background-large.png'); 
+  background-image: url('/client/Images/Background/background-large.png'); 
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 @media (min-width: 1921px) {
   body {
-    background-image: url('client/Images/Background/background-extra-large.png');
+    background-image: url('/client/Images/Background/background-extra-large.png');
   }
 }
 
 @media (min-width: 769px) and (max-width: 1920px) {
   body {
-    background-image: url('client/Images/Background/background-large.png');
+    background-image: url('/client/Images/Background/background-large.png');
   }
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
   body {
-    background-image: url('client/Images/Background/background-medium.png');
+    background-image: url('/client/Images/Background/background-medium.png');
   }
 }
 
 @media (max-width: 640px) {
   body {
-    background-image: url('client/Images/Background/background-small.png'); 
+    background-image: url('/client/Images/Background/background-small.png'); 
   }
 }
 
