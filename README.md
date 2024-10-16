@@ -9,20 +9,22 @@ Currently exploring creating svg animations.
 I am exploring more UI design, motion, and 3D Graphics.
 
 ## Technologies and Skills Experimented With So Far
-- React
-- Typescript
-- Sass
-- Vite
-- Github Pages
-- Custom Domain Hosting
-- Nginx
-- Figma
-- Canva
 - Benchmarking
+- Canva
+- Creating animated svg's
+- Custom Domain Hosting
+- Figma
+- Github Desktop
+- Github Pages
+- Nginx
 - Npm Libraries
-- Creating animated svgs
-- Three.js
-- SVG Filters
+- React
+- Sass CSS
+- SVG's
+- Typescript
+- Ubuntu
+- Vite
+- WSL
 
 ## Stretch Ideas
 - Component animation on scroll (part of next CSS update)
