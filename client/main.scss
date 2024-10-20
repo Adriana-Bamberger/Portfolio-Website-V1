@@ -378,9 +378,10 @@ scss
   align-items: center;
   border-radius: 30px;
   border-width: 1em;
-  padding: 1em;
   margin-bottom: 1em;
+  max-height: 15em;
   opacity: 1;
+  padding-right: 3em;
   cursor: pointer;
   text-align: left;
   backdrop-filter: blur(4px) saturate(100%);
@@ -390,14 +391,15 @@ scss
 }
 
 .project-card:nth-child(even) {
-  flex-direction: row-reverse; // Reverse the order for even cards
-  padding-left: 2em;
+  flex-direction: row-reverse; 
+  padding-left: 3em;
+  padding-right: 0em;
 }
 
 .project-img {
   border-radius: 30px;
-  // margin-right: 1em; // Add margin to the right of the image
-  max-width: 50%; // Adjust as needed
+  max-width: 50%;
+  max-height: 90%;
 }
 
 .project-content {
@@ -408,25 +410,28 @@ scss
 
 .project-content h2,
 .project-content hr{
-  margin: 0em 0; // Adjust margins for spacing
+  margin: 0em; 
+  padding: 0em;
 }
 .project-content p {
-  margin: 0.5em 0; // Adjust margins for spacing
+  margin: 0.5em 0; 
+  max-height: 100%;
+  font-size: small;
 }
 
 @media (max-width: 600px) {
   .projects-container {
-    grid-template-columns: 1fr; // Single column for mobile view
-  }
+    grid-template-columns: 1fr; 
 
   .project-card {
-    flex-direction: column; // Change to column for mobile view
-    text-align: center; // Center text for mobile view
+    flex-direction: column; 
+    text-align: center; 
   }
 
   .project-img {
-    margin-right: 0; // Remove right margin for mobile view
-    margin-bottom: 1em; // Add bottom margin for mobile view
-    max-width: 100%; // Adjust as needed
+    margin-right: 0; 
+    margin-bottom: 1em; 
+    max-width: 100%; 
   }
+}
 }
