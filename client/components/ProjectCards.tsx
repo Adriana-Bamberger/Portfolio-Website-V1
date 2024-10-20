@@ -36,7 +36,7 @@ function ProjectsCards() {
                     src={image}
                     alt={`${project.title} ${index + 1}`}
                     loading="lazy"
-                    style={{ height: '50px', margin: '5px' }}
+                    style={{ height: '35px', margin: '5px' }}
                   />
                 ))}
             </div>
