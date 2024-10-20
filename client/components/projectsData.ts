@@ -35,23 +35,25 @@ export const projects = [
     id: '1',
     title: 'WedPro',
     description:
-      'A web application for wedding planning, built with Laravel, Filament and Vue.',
+      'Built a bunch of features for this wonderful startups web application for wedding planning, built with an entirely new to me stack: Filament, Laragon, Laravel, PHP, Tailwind, Vue.js',
     image: wedProImg,
     images: [
-      laravel,
-      vue,
-      githubdesktop,
       canva,
-      laragon,
-      mysqlworkbench,
       filament,
+      githubdesktop,
+      mysqlworkbench,
+      laragon,
+      laravel,
+      // Add PHP
+      // Add Tailwind
+      vue,
     ],
   },
   {
     id: '2',
     title: 'OOTD',
     description:
-      'A native app for Woodrobe management and sharing made with React Native.',
+      'A native app for Wardrobe management and sharing, My team learnt and made this in a week as my final project from my time in Dev Academy with React Native and Expo, We had previously only used classic React with TSX, so this was a exciting new challenge.',
     image: ootdImg,
     images: [reactNative, typescript, canva, expo, firebase],
   },
@@ -59,9 +61,10 @@ export const projects = [
     id: '3',
     title: 'Dev Academy',
     description:
-      'A Bunch of Projects from the coding bootcamp, built with React, TypeScript and many more.',
+      'An intensive 15-week immersive full stack web development bootcamp, Hands-on challenges, both independently and collaboratively, through group and pair programming sessions. React, TypeScript and many more, focusing on real-world development scenarios. Practiced extensively in Unit Testing, Test Driven Development, Asynchronous Programming Techniques, RESTful APIs, and Git. Emphasized soft skills, empathy, and well-being, learning meditation and integrating agile methodologies into team projects, providing and receiving growth-oriented feedback. Approximately 900 hours of coding',
     image: devAcademyImg,
     images: [
+      // HTML5, CSS3 (SCSS/Sass), JavaScript, TypeScript, React, React Native, Node.js, Express.js, NPM, Knex, SQLite3, Docker, Vite, Vitest, Jest, Storybook, Superagent, Supertest, Figma, Canva, and Visual Studio.
       typescript,
       sass,
       docker,
@@ -77,7 +80,8 @@ export const projects = [
   {
     id: '4',
     title: 'Portfolio',
-    description: 'This website, and its many versions.',
+    description:
+      'This website, and its many versions. As normal it is a work in progress, taking my time to perfect it around my other work projects but I am proud of it. I have learnt a lot about React, TypeScript, and CSS in the process of making it.',
     image: portfolioImg,
     images: [
       typescript,
