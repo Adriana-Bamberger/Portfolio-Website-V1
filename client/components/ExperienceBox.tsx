@@ -12,6 +12,16 @@ function ExprienceBox() {
     {
       type: 'h3',
       content:
+        'Research And Development Intern | WedPro | August 2024 - Present',
+    },
+    {
+      type: 'p',
+      content:
+        '• Remote Project research and development </br> • Designing wireframes and project components using Canva and Figma </br> •  Crash speed learning from provided resources and applying new skills. </br> • Learning and using Laragon, Laravel, Vue.js, Filament PHP, MySQL, and MySQL Workbench.',
+    },
+    {
+      type: 'h3',
+      content:
         'Trainee: Full Stack Web Development | Dev Academy Aotearoa |  March 2024 - July 2024',
     },
     {
