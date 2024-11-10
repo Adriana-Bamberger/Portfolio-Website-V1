@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid'
 
-function ExprienceBox() {
+function ExperienceBox() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const handleClick = (index: number) => {
@@ -101,6 +101,11 @@ function ExprienceBox() {
                 role="button"
                 tabIndex={0}
                 className={isActive ? 'active-heading' : ''}
+                onKeyPress={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    handleClick(index)
+                  }
+                }}
               >
                 <h3 className="hover-effect">
                   {isActive ? (
@@ -130,4 +135,4 @@ function ExprienceBox() {
   )
 }
 
-export default ExprienceBox
+export default ExperienceBox
