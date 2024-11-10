@@ -9,7 +9,8 @@ import GlowEffect from '../GlowEffect'
 
 function App() {
   return (
-    <div className="background-container">
+    <div className="bg-background-large bg-cover bg-fixed md:bg-background-large lg:bg-background-extra-large xl:bg-background-large 2xl:bg-background-large text-white">
+      <div className="font-poppins overflow-hidden m-0 p-0"></div>
       <GlowEffect />
       <HeaderBar />
       <HeroBox />
