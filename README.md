@@ -3,7 +3,7 @@ https://adriana.bamberger.nz/
 
 ## Status
 Currently a WIP. Some content is yet to be added. 
-Currently exploring creating svg animations.
+Currently moving everything from raw scss to tailwind css
 
 ## Learning Objectives
 I am exploring more UI design, motion, and 3D Graphics.
@@ -25,8 +25,10 @@ I am exploring more UI design, motion, and 3D Graphics.
 - Ubuntu
 - Vite
 - WSL
+- Tailwind
 
 ## Stretch Ideas
-- Component animation on scroll (part of next CSS update)
+- Component animation on scroll
 - Movement in the 3D avatar
 - Component transformations on click.
+- animated background
