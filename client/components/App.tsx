@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HeaderBar from './HeaderBar'
 import ExperienceBox from './ExperienceBox'
 import ProjectsBox from './ProjectsBox'
