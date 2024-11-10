@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './main.scss'
+// import './main.scss'
 
 const GlowEffect: React.FC = () => {
   useEffect(() => {
