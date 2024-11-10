@@ -7,12 +7,12 @@ function HeroBox() {
         <div className="flex flex-row justify-center items-center">
           <div className="relative flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col space-y-2">
-              <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+              <p className="text-xl">
                 <b>
                   <em>Kia ora! Hallo! Hiya! </em>
                 </b>{' '}
               </p>
-              <p className="text-base md:text-lg lg:text-xl">
+              <p>
                 {' '}
                 I&apos;m a kiwi web developer who loves to code, design, and
                 solve problems as much as I love stitching together creative
