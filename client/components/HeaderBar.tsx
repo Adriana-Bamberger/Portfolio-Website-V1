@@ -40,7 +40,7 @@ function HeaderBar() {
     },
   ]
   return (
-    <div className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-2.5 flex justify-between items-center md:mx-6 md:my-4 lg:mx-8 lg:my-6 xl:mx-10 xl:my-8 2xl:mx-12 2xl:my-10">
+    <div className="bg-white bg-opacity-20 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-2.5 flex justify-between items-center md:mx-6 md:my-4 lg:mx-8 lg:my-6 xl:mx-10 xl:my-8 2xl:mx-12 2xl:my-10">
       <span>
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
           Adriana Bamberger | Portfolio
