@@ -1,34 +1,26 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-// import { useNavigate } from 'react-router-dom'
 import { projects } from './projectsData'
 
 function ProjectsCards() {
-  // const navigate = useNavigate()
-
-  // const handleClick = (id: string) => {
-  //   navigate(`/project-details/${id}`)
-  // }
-
   return (
-    <div className="projects-container">
-      {projects.map((project) => (
+    <div>
+      {projects.map((project, index) => (
         <div
           key={project.id}
-          className="project-card"
-          // onClick={() => handleClick(project.id)}
+          className={`bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-6 md:p-8 lg:p-10 xl:p-12 flex ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}
         >
           <img
             src={project.image}
             alt={project.title}
-            className="project-img"
+            className="w-1/3 rounded-lg object-cover mr-6"
             loading="lazy"
           />
-          <div className="project-content">
-            <h2>{project.title}</h2>
-            <hr />
+          <div className="w-2/3">
+            <h2 className="text-xl md:text-2xl lg:text-3xl">{project.title}</h2>
+            <hr className="my-2" />
             <p>{project.description}</p>
-            <div>
+            <div className="flex flex-wrap mt-4">
               {project.images &&
                 project.images.map((image, index) => (
                   <img
@@ -36,7 +28,7 @@ function ProjectsCards() {
                     src={image}
                     alt={`${project.title} ${index + 1}`}
                     loading="lazy"
-                    style={{ height: '35px', margin: '5px' }}
+                    className="h-9 m-1"
                   />
                 ))}
             </div>
