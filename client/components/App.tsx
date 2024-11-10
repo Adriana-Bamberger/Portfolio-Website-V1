@@ -15,7 +15,7 @@ function App() {
       <HeaderBar />
       <HeroBox />
       <ProjectsBox />
-      <ExperienceBox />
+      {/* <ExperienceBox /> */}
       <SkillsBox />
       <InterestsBox />
       <Footer />

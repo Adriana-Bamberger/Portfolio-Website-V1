@@ -89,7 +89,7 @@ function ExperienceBox() {
   ]
   return (
     <>
-      <div className="box">
+      <div className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-6 md:p-8 lg:p-10 xl:p-12">
         <h1>Experience</h1>
         {experiences.map((element, index) => {
           if (element.type === 'h3') {
@@ -107,11 +107,11 @@ function ExperienceBox() {
                   }
                 }}
               >
-                <h3 className="hover-effect">
+                <h3 className="text-xl font-medium hover:text-grey flex items-center gap-2">
                   {isActive ? (
-                    <ChevronUpIcon className="icon" />
+                    <ChevronUpIcon className="w-5 h-5" />
                   ) : (
-                    <ChevronDownIcon className="icon" />
+                    <ChevronDownIcon className="w-5 h-5" />
                   )}
                   {element.content}
                 </h3>
