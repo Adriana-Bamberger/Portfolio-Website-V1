@@ -28,26 +28,42 @@ const Footer: React.FC = () => {
     },
   ]
 
-  const firstTwoLinks = socialLinks.slice(0, 2)
-  const lastTwoLinks = socialLinks.slice(2)
-
   return (
-    <footer className="box footer">
-      <div className="footer-content">
-        <div className="social-icons-left">
-          <SocialIcon href={socialLinks[0].href} src={socialLinks[0].src} alt={socialLinks[0].alt} />
-          <SocialIcon href={socialLinks[1].href} src={socialLinks[1].src} alt={socialLinks[1].alt} />
+    <div className="text-2xl font-semibold bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-3 md:p-6 lg:p-8 xl:p-10">
+      <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
+        {/* Social Icons Left */}
+        <div className="flex space-x-4">
+          {socialLinks.slice(0, 2).map((link, index) => (
+            <SocialIcon
+              key={index}
+              href={link.href}
+              src={link.src}
+              alt={link.alt}
+            />
+          ))}
         </div>
-        <div className="footer-text">
-          <p>Tāmaki Makaurau, Aotearoa | New Zealand Citizen | adriana@bamberger.nz |
-        022 470 6342</p>
+
+        {/* Centered Footer Text */}
+        <div className="text-center md:text-left md:mx-4">
+          <p className="text-sm md:text-base">
+            Tāmaki Makaurau, Aotearoa | New Zealand Citizen |
+            adriana@bamberger.nz | 022 470 6342
+          </p>
         </div>
-        <div className="social-icons-right">
-          <SocialIcon href={socialLinks[2].href} src={socialLinks[2].src} alt={socialLinks[2].alt} />
-          <SocialIcon href={socialLinks[3].href} src={socialLinks[3].src} alt={socialLinks[3].alt} />
+
+        {/* Social Icons Right */}
+        <div className="flex space-x-4">
+          {socialLinks.slice(2).map((link, index) => (
+            <SocialIcon
+              key={index}
+              href={link.href}
+              src={link.src}
+              alt={link.alt}
+            />
+          ))}
         </div>
       </div>
-    </footer>
+    </div>
   )
 }
 
