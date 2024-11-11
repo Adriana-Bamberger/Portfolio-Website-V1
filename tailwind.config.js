@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       borderRadius: {
-        'custom': '2rem',
+        custom: '2rem',
       },
       colors: {
         clr1: '#E40303',
@@ -28,6 +28,15 @@ export default {
           "url('/client/Images/Background/background-small.png')",
         'background-extra-large':
           "url('/client/Images/Background/background-extra-large.png')",
+      },
+      animation: {
+        marquee: 'marquee 20s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
     },
   },
