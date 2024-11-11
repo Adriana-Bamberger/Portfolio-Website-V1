@@ -17,7 +17,7 @@ function ProjectsCards() {
             loading="lazy"
           />
           <div className="w-2/3">
-            <h2 className="text-xl md:text-2xl lg:text-3xl">{project.title}</h2>
+            <h2 className="text-xl font-semibold">{project.title}</h2>
             <hr className="my-2" />
             <p>{project.description}</p>
             <div className="flex flex-wrap mt-4">
