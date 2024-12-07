@@ -15,9 +15,9 @@ function App() {
       <HeaderBar />
       <HeroBox />
       <ProjectsBox />
-      {/* <ExperienceBox /> */}
       <SkillsBox />
       <InterestsBox />
+      <ExperienceBox />
       <Footer />
       <div className="overflow-hidden m-0 p-0"></div>
     </div>
