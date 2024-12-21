@@ -33,7 +33,7 @@ function HeroBox() {
               src={img}
               alt="cartoon drawing of adriana by adriana"
               loading="lazy"
-              className="absolute right-8 translate-y-1/4 max-w-xs max-h-96 md:max-w-sm"
+              className="absolute right-8 translate-y-1/4 max-w-xs max-h-96 md:max-w-xs lg:max-w-sm"
             />
           </div>
         </div>
