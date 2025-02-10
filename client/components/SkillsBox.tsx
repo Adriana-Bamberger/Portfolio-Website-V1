@@ -2,7 +2,7 @@ import apollo from '../Images/Skills/apollo.png'
 import artRage from '../Images/Skills/artRage.png'
 import aws from '../Images/Skills/aws.png'
 import canva from '../Images/Skills/canva.png'
-import chilliCreme from '../Images/Skills/chilliCreme.png'
+// import chilliCreme from '../Images/Skills/chilliCreme.png'
 import clipStudioPaint from '../Images/Skills/clipStudioPaint.png'
 import conflunece from '../Images/Skills/confluence.png'
 import csharp from '../Images/Skills/csharp.png'
@@ -85,7 +85,7 @@ const images = [
   filament,
   graphql,
   apollo,
-  chilliCreme,
+  // chilliCreme,
   hotChoc,
   openTel,
   jira,
