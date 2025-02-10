@@ -36,12 +36,14 @@ import laravel from '../Images/Skills/laravel.png'
 import mediBangPaint from '../Images/Skills/mediBangPaint.png'
 import mySqlWorkbench from '../Images/Skills/mySqlWorkbench.png'
 import node from '../Images/Skills/node.png'
+import notion from '../Images/Skills/notion.png'
 import npm from '../Images/Skills/npm.png'
 import openTel from '../Images/Skills/openTel.png'
 import reactJs from '../Images/Skills/reactJs.png'
 import reactNative from '../Images/Skills/reactNative.png'
 import sass from '../Images/Skills/sass.png'
 import sketchbook from '../Images/Skills/sketchbook.png'
+import sql from '../Images/Skills/sql.png'
 import sqLite from '../Images/Skills/sqLite.png'
 import storybook from '../Images/Skills/storybook.png'
 import tailwind from '../Images/Skills/tailwind.png'
@@ -100,12 +102,14 @@ export const projects = [
       filament,
       gitHubDesktop,
       google,
+      notion,
       html5,
       js,
       laragon,
       laravel,
       mySqlWorkbench,
       npm,
+      sql,
       sqLite,
       storybook,
       tailwind,
@@ -152,6 +156,7 @@ export const projects = [
       js,
       knex,
       node,
+      notion,
       npm,
       reactJs,
       sass,
@@ -171,7 +176,20 @@ export const projects = [
       'This website, and its many versions. As normal it is a work in progress, taking my time to perfect it around my other work projects but I am proud of it. I have learnt a lot about React, TypeScript, and CSS in the process of making it.',
     image: portfolioImg,
     images: [
+      canva,
+      figma,
+      gitHub,
+      gitHubDesktop,
+      google,
+      html5,
+      js,
+      notion,
+      npm,
+      reactJs,
+      sass,
+      tailwind,
       typescript,
+      vsCode,
     ],
   },
 ]

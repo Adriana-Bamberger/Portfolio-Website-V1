@@ -29,12 +29,14 @@ import laravel from '../Images/Skills/laravel.png'
 import mediBangPaint from '../Images/Skills/mediBangPaint.png'
 import mySqlWorkbench from '../Images/Skills/mySqlWorkbench.png'
 import node from '../Images/Skills/node.png'
+import notion from '../Images/Skills/notion.png'
 import npm from '../Images/Skills/npm.png'
 import openTel from '../Images/Skills/openTel.png'
 import reactJs from '../Images/Skills/reactJs.png'
 import reactNative from '../Images/Skills/reactNative.png'
 import sass from '../Images/Skills/sass.png'
 import sketchbook from '../Images/Skills/sketchbook.png'
+import sql from '../Images/Skills/sql.png'
 import sqLite from '../Images/Skills/sqLite.png'
 import storybook from '../Images/Skills/storybook.png'
 import tailwind from '../Images/Skills/tailwind.png'
@@ -75,6 +77,7 @@ const images = [
   jenkins,
   docker,
   firebase,
+  sql,
   sqLite,
   mySqlWorkbench,
   laravel,
@@ -90,6 +93,7 @@ const images = [
   vsCode,
   gitHub,
   conflunece,
+  notion,
   csharp,
   dotNet,
   aws,
