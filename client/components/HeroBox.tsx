@@ -1,4 +1,4 @@
-import img from '../Images/Advertars/3D-Advtar.png'
+import img from '../public/Images/Advertars/3D-Advtar.png'
 
 function HeroBox() {
   return (

@@ -21,13 +21,13 @@ export default {
       },
       backgroundImage: {
         'background-large':
-          "url('/client/Images/Background/background-large.png')",
+          "url('/client/public/Images/Background/background-large.png')",
         'background-medium':
-          "url('/client/Images/Background/background-medium.png')",
+          "url('/client/public/Images/Background/background-medium.png')",
         'background-small':
-          "url('/client/Images/Background/background-small.png')",
+          "url('/client/public/Images/Background/background-small.png')",
         'background-extra-large':
-          "url('/client/Images/Background/background-extra-large.png')",
+          "url('/client/public/Images/Background/background-extra-large.png')",
       },
       animation: {
         marquee: 'marquee 20s linear infinite',

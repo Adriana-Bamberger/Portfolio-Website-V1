@@ -1,10 +1,10 @@
 import SocialIcon from './SocialIcon'
-import Github from '../Images/Social Icons/github-logo.png'
-import Linkedin from '../Images/Social Icons/linkedin.png'
-import Instagram from '../Images/Social Icons/instagram.png'
-import StackOverflow from '../Images/Social Icons/stack-overflow.png'
-import GoodReads from '../Images/Social Icons/goodReads.png'
-import DownloadCV from '../Images/Social Icons/CV-Download-Icon-white.png'
+import Github from '../public/Images/Social Icons/github-logo.png'
+import Linkedin from '../public/Images/Social Icons/linkedin.png'
+import Instagram from '../public/Images/Social Icons/instagram.png'
+import StackOverflow from '../public/Images/Social Icons/stack-overflow.png'
+import GoodReads from '../public/Images/Social Icons/goodReads.png'
+import DownloadCV from '../public/Images/Social Icons/CV-Download-Icon-white.png'
 
 function HeaderBar() {
   const socialLinks = [

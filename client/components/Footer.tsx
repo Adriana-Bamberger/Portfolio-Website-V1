@@ -1,8 +1,8 @@
 import SocialIcon from './SocialIcon'
-import Insta from '../Images/Social Icons/instagram.png'
-import LinkedIn from '../Images/Social Icons/linkedin.png'
-import WeChat from '../Images/Social Icons/wechat.png'
-import Github from '../Images/Social Icons/github-logo.png'
+import Insta from '../public/Images/Social Icons/instagram.png'
+import LinkedIn from '../public/Images/Social Icons/linkedin.png'
+import WeChat from '../public/Images/Social Icons/wechat.png'
+import Github from '../public/Images/Social Icons/github-logo.png'
 
 const Footer: React.FC = () => {
   const socialLinks = [
