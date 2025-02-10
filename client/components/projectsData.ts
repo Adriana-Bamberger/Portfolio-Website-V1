@@ -1,99 +1,194 @@
-// projectsData.ts
-import wedProImg from '../Images/Projects/WedPro-Clear.png'
-import ootdImg from '../Images/Projects/OOTD-Clear.png'
-import devAcademyImg from '../Images/Projects/DevAcademy-Clear.png'
-import portfolioImg from '../Images/Projects/Portfolio-Clear.png'
-import filament from '../Images/Skills/Filament.png'
-import laravel from '../Images/Skills/Laravel.png'
-// import react from '../Images/Skills/react.png'
-import reactNative from '../Images/Skills/react-native.png'
-import typescript from '../Images/Skills/typescript.png'
-import vue from '../Images/Skills/Vue.png'
-import githubdesktop from '../Images/Skills/Github-Desktop.png'
-import laragon from '../Images/Skills/Laragon.png'
-import mysqlworkbench from '../Images/Skills/My-SQL-Workbench.png'
+// Project Images
+import pushpayImg from '../Images/Projects/pushpay.png'
+import wedProImg from '../Images/Projects/wedPro.png'
+import ootdImg from '../Images/Projects/ootd.png'
+import devAcademyImg from '../Images/Projects/devAcademy.png'
+import portfolioImg from '../Images/Projects/portfolio.png'
+// Skill Images
+import apollo from '../Images/Skills/apollo.png'
+import artRage from '../Images/Skills/artRage.png'
+import aws from '../Images/Skills/aws.png'
 import canva from '../Images/Skills/canva.png'
-import expo from '../Images/Skills/expo.png'
-import firebase from '../Images/Skills/firebase.png'
-import chatgpt from '../Images/Skills/chatgpt.png'
-import clipstudio from '../Images/Skills/clipstudiopaint.png'
+import chilliCreme from '../Images/Skills/chilliCreme.png'
+import clipStudioPaint from '../Images/Skills/clipStudioPaint.png'
+import conflunece from '../Images/Skills/confluence.png'
+import csharp from '../Images/Skills/csharp.png'
 import docker from '../Images/Skills/docker.png'
-import sass from '../Images/Skills/sass.png'
+import dotNet from '../Images/Skills/dotNet.png'
+import expo from '../Images/Skills/expo.png'
+import expressJs from '../Images/Skills/expressJs.png'
 import figma from '../Images/Skills/figma.png'
-import vscode from '../Images/Skills/vscode.png'
-import tailwind from '../Images/Skills/tailwind.png'
-import sketchbook from '../Images/Skills/sketchbook.png'
-import knex from '../Images/Skills/knex.png'
-import js from '../Images/Skills/js.png'
-import html5 from '../Images/Skills/html-5.png'
+import filament from '../Images/Skills/filament.png'
+import firebase from '../Images/Skills/firebase.png'
+import gitHub from '../Images/Skills/gitHub.png'
+import gitHubDesktop from '../Images/Skills/gitHubDesktop.png'
+import gmail from '../Images/Skills/gmail.png'
 import google from '../Images/Skills/google.png'
-import gemini from '../Images/Skills/gemini.png'
-import express from '../Images/Skills/expressJs.png'
+import graphql from '../Images/Skills/graphql.png'
+import hotChoc from '../Images/Skills/hotChoc.png'
+import html5 from '../Images/Skills/html5.png'
+import jenkins from '../Images/Skills/jenkins.png'
+import jira from '../Images/Skills/jira.png'
+import js from '../Images/Skills/js.png'
+import knex from '../Images/Skills/knex.png'
+import laragon from '../Images/Skills/laragon.png'
+import laravel from '../Images/Skills/laravel.png'
+import mediBangPaint from '../Images/Skills/mediBangPaint.png'
+import mySqlWorkbench from '../Images/Skills/mySqlWorkbench.png'
+import node from '../Images/Skills/node.png'
+import notion from '../Images/Skills/notion.png'
+import npm from '../Images/Skills/npm.png'
+import openTel from '../Images/Skills/openTel.png'
+import reactJs from '../Images/Skills/reactJs.png'
+import reactNative from '../Images/Skills/reactNative.png'
+import sass from '../Images/Skills/sass.png'
+import sketchbook from '../Images/Skills/sketchbook.png'
+import sql from '../Images/Skills/sql.png'
+import sqLite from '../Images/Skills/sqLite.png'
+import storybook from '../Images/Skills/storybook.png'
+import tailwind from '../Images/Skills/tailwind.png'
+import typescript from '../Images/Skills/typescript.png'
+import vite from '../Images/Skills/vite.png'
+import vitest from '../Images/Skills/vitest.png'
+import vsCode from '../Images/Skills/vsCode.png'
+import vueJs from '../Images/Skills/vueJs.png'
+import yarn from '../Images/Skills/yarn.png'
 
 export const projects = [
   {
     id: '1',
-    title: 'WedPro',
-    description:
-      'Built a bunch of features for this wonderful startups web application for wedding planning, built with an entirely new to me stack: Filament, Laragon, Laravel, PHP, Tailwind, Vue.js',
-    image: wedProImg,
+    title: 'Pushpay - School Of Friendship',
+    description: 'Designed, built, tested, presented, and documented a full stack React componentized website with Typescript and Tailwind, gathering data through different methods and setups of interchangeable GraphQL Schema Federation super and subgraphs, fully Dockerized, AWS, using Opentelemetry.',
+    image: pushpayImg,
     images: [
+      apollo,
+      aws,
       canva,
-      filament,
-      githubdesktop,
-      mysqlworkbench,
-      laragon,
-      laravel,
-      // Add PHP
-      // Add Tailwind
-      vue,
+      chilliCreme,
+      conflunece,
+      csharp,
+      docker,
+      dotNet,
+      figma,
+      gitHubDesktop,
+      google,
+      graphql,
+      hotChoc,
+      html5,
+      jenkins,
+      jira,
+      js,
+      node,
+      npm,
+      openTel,
+      reactJs,
+      storybook,
+      tailwind,
+      typescript,
+      vsCode,
+      yarn,
     ],
   },
   {
     id: '2',
-    title: 'OOTD',
+    title: 'WedPro Web App',
     description:
-      'A native app for Wardrobe management and sharing, My team learnt and made this in a week as my final project from my time in Dev Academy with React Native and Expo, We had previously only used classic React with TSX, so this was a exciting new challenge.',
-    image: ootdImg,
-    images: [reactNative, typescript, canva, expo, firebase],
+      'I assisted with building a feature roadmap, designed, built, and tested new features from the backlog to implement subscriptions and add new UI`s on this exciting new kiwi SaaS startups wedding planning app. synchronously learning the new skills involved.',
+    image: wedProImg,
+    images: [
+      canva,
+      figma,
+      filament,
+      gitHubDesktop,
+      google,
+      notion,
+      html5,
+      js,
+      laragon,
+      laravel,
+      mySqlWorkbench,
+      npm,
+      sql,
+      sqLite,
+      storybook,
+      tailwind,
+      typescript,
+      vsCode,
+      vueJs,
+    ],
   },
   {
     id: '3',
-    title: 'Dev Academy',
+    title: 'OOTD IOS App',
     description:
-      'An intensive 15-week immersive full stack web development bootcamp, Hands-on challenges, both independently and collaboratively, through group and pair programming sessions. React, TypeScript and many more, focusing on real-world development scenarios. Practiced extensively in Unit Testing, Test Driven Development, Asynchronous Programming Techniques, RESTful APIs, and Git. Emphasized soft skills, empathy, and well-being, learning meditation and integrating agile methodologies into team projects, providing and receiving growth-oriented feedback. Approximately 900 hours of coding',
-    image: devAcademyImg,
+      'A native app for Wardrobe management and sharing, My team learnt and made this in a week as my final project from my time in Dev Academy with React Native and Expo, We had previously only used classic React with TSX, so this was a exciting new challenge.',
+    image: ootdImg,
     images: [
-      // HTML5, CSS3 (SCSS/Sass), JavaScript, TypeScript, React, React Native, Node.js, Express.js, NPM, Knex, SQLite3, Docker, Vite, Vitest, Jest, Storybook, Superagent, Supertest, Figma, Canva, and Visual Studio.
-      typescript,
-      sass,
       docker,
+      expo,
       figma,
-      tailwind,
-      vscode,
-      knex,
-      js,
+      firebase,
+      gitHub,
       html5,
-      express,
+      js,
+      npm,
+      reactNative,
+      typescript,
+      vitest,
+      vsCode,
     ],
   },
   {
     id: '4',
-    title: 'Portfolio',
+    title: 'Dev Academy Projects',
     description:
-      'This website, and its many versions. As normal it is a work in progress, taking my time to perfect it around my other work projects but I am proud of it. I have learnt a lot about React, TypeScript, and CSS in the process of making it.',
+      'The equivalent of six months of coding in an intensive four-month immersive full-stack web development boot camp working in real-world development scenarios. We practiced extensively in unit testing, test-driven development, asynchronous programming techniques, RESTful APIs, and Git. We completed hands-on challenges, both independently and collaboratively, through group and pair programming sessions. We exercised soft skills, empathy, and well-being, learning meditation and integrating agile methodologies into team projects.',
+    image: devAcademyImg,
+    images: [
+      docker,
+      expo,
+      expressJs,
+      figma,
+      gitHub,
+      html5,
+      jira,
+      js,
+      knex,
+      node,
+      notion,
+      npm,
+      reactJs,
+      sass,
+      sqLite,
+      storybook,
+      tailwind,
+      typescript,
+      vite,
+      vitest,
+      vsCode,
+    ],
+  },
+  {
+    id: '5',
+    title: 'Portfolio SPA',
+    description:
+      'This website, and its many versions. As usual it is a work in progress, taking my time to perfect it around my other work projects. Inspired by my childhood pc games and Googles Martial Design.',
     image: portfolioImg,
     images: [
-      typescript,
-      sass,
       canva,
-      clipstudio,
-      chatgpt,
-      gemini,
-      vscode,
-      html5,
+      figma,
+      gitHub,
+      gitHubDesktop,
       google,
-      sketchbook,
+      html5,
+      js,
+      notion,
+      npm,
+      reactJs,
+      sass,
+      tailwind,
+      typescript,
+      vsCode,
     ],
   },
 ]

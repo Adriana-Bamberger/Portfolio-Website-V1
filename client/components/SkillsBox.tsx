@@ -1,64 +1,102 @@
-// TODO: Adjust the display frame size that this moves in, make it constant, and update the images - I'm missing a few.
-import ArtRage from '../Images/Skills/art-rage.png'
-import Canva from '../Images/Skills/canva.png'
-import ChatGPT from '../Images/Skills/chatgpt.png'
-import ClipStudioPaint from '../Images/Skills/clipstudiopaint.png'
-import Docker from '../Images/Skills/docker.png'
-import Expo from '../Images/Skills/expo.png'
-import Express from '../Images/Skills/expressJs.png'
-import Figma from '../Images/Skills/figma.png'
-import Firebase from '../Images/Skills/firebase.png'
-import Gemini from '../Images/Skills/gemini.png'
-import GitHub from '../Images/Skills/Github logo.png'
-import Google from '../Images/Skills/google.png'
-import HTML from '../Images/Skills/html-5.png'
-import JS from '../Images/Skills/js.png'
-import Knex from '../Images/Skills/knex.png'
-import MediBangPaint from '../Images/Skills/medibangpaint.png'
-import ReactNative from '../Images/Skills/react-native.png'
-import React from '../Images/Skills/react.png'
-import Sass from '../Images/Skills/sass.png'
-import SketchBook from '../Images/Skills/sketchbook.png'
-import Tailwind from '../Images/Skills/tailwind.png'
-import Typescript from '../Images/Skills/typescript.png'
-import VSCode from '../Images/Skills/vscode.png'
-import Filament from '../Images/Skills/Filament.png'
-import GithubDesktop from '../Images/Skills/Github-Desktop.png'
-import Laragon from '../Images/Skills/Laragon.png'
-import Laravel from '../Images/Skills/Laravel.png'
-import MySQL from '../Images/Skills/My-SQL-Workbench.png'
-import Vue from '../Images/Skills/Vue.png'
+import apollo from '../Images/Skills/apollo.png'
+import artRage from '../Images/Skills/artRage.png'
+import aws from '../Images/Skills/aws.png'
+import canva from '../Images/Skills/canva.png'
+import chilliCreme from '../Images/Skills/chilliCreme.png'
+import clipStudioPaint from '../Images/Skills/clipStudioPaint.png'
+import conflunece from '../Images/Skills/confluence.png'
+import csharp from '../Images/Skills/csharp.png'
+import docker from '../Images/Skills/docker.png'
+import dotNet from '../Images/Skills/dotNet.png'
+import expo from '../Images/Skills/expo.png'
+import expressJs from '../Images/Skills/expressJs.png'
+import figma from '../Images/Skills/figma.png'
+import filament from '../Images/Skills/filament.png'
+import firebase from '../Images/Skills/firebase.png'
+import gitHub from '../Images/Skills/gitHub.png'
+import gitHubDesktop from '../Images/Skills/gitHubDesktop.png'
+import gmail from '../Images/Skills/gmail.png'
+import google from '../Images/Skills/google.png'
+import graphql from '../Images/Skills/graphql.png'
+import hotChoc from '../Images/Skills/hotChoc.png'
+import html5 from '../Images/Skills/html5.png'
+import jenkins from '../Images/Skills/jenkins.png'
+import jira from '../Images/Skills/jira.png'
+import js from '../Images/Skills/js.png'
+import knex from '../Images/Skills/knex.png'
+import laragon from '../Images/Skills/laragon.png'
+import laravel from '../Images/Skills/laravel.png'
+import mediBangPaint from '../Images/Skills/mediBangPaint.png'
+import mySqlWorkbench from '../Images/Skills/mySqlWorkbench.png'
+import node from '../Images/Skills/node.png'
+import notion from '../Images/Skills/notion.png'
+import npm from '../Images/Skills/npm.png'
+import openTel from '../Images/Skills/openTel.png'
+import reactJs from '../Images/Skills/reactJs.png'
+import reactNative from '../Images/Skills/reactNative.png'
+import sass from '../Images/Skills/sass.png'
+import sketchbook from '../Images/Skills/sketchbook.png'
+import sql from '../Images/Skills/sql.png'
+import sqLite from '../Images/Skills/sqLite.png'
+import storybook from '../Images/Skills/storybook.png'
+import tailwind from '../Images/Skills/tailwind.png'
+import typescript from '../Images/Skills/typescript.png'
+import vite from '../Images/Skills/vite.png'
+import vitest from '../Images/Skills/vitest.png'
+import vsCode from '../Images/Skills/vsCode.png'
+import vueJs from '../Images/Skills/vueJs.png'
+import yarn from '../Images/Skills/yarn.png'
 
 const images = [
-  ArtRage,
-  Canva,
-  ChatGPT,
-  ClipStudioPaint,
-  Docker,
-  Expo,
-  Express,
-  Figma,
-  Firebase,
-  Gemini,
-  GitHub,
-  Google,
-  HTML,
-  JS,
-  Knex,
-  MediBangPaint,
-  ReactNative,
-  React,
-  Sass,
-  SketchBook,
-  Tailwind,
-  Typescript,
-  VSCode,
-  Filament,
-  GithubDesktop,
-  Laragon,
-  Laravel,
-  MySQL,
-  Vue,
+  // These are in a certain order to make the marquee animation look good and to keep context for the items grouped together
+  clipStudioPaint,
+  mediBangPaint,
+  artRage,
+  sketchbook,
+  google,
+  gmail,
+  canva,
+  figma,
+  sass,
+  tailwind,
+  html5,
+  js,
+  typescript,
+  reactJs,
+  vueJs,
+  node,
+  expressJs,
+  knex,
+  reactNative,
+  expo,
+  vitest,
+  storybook,
+  vite,
+  npm,
+  yarn,
+  jenkins,
+  docker,
+  firebase,
+  sql,
+  sqLite,
+  mySqlWorkbench,
+  laravel,
+  laragon,
+  filament,
+  graphql,
+  apollo,
+  chilliCreme,
+  hotChoc,
+  openTel,
+  jira,
+  gitHubDesktop,
+  vsCode,
+  gitHub,
+  conflunece,
+  notion,
+  csharp,
+  dotNet,
+  aws,
 ]
 
 function SkillsBox() {
