@@ -57,9 +57,8 @@ import yarn from '../Images/Skills/yarn.png'
 export const projects = [
   {
     id: '1',
-    title: 'Pushpay',
-    description:
-      'TODO: New text about my time with Pushpay in team Sunny Starscout needs to go in here.',
+    title: 'Pushpay - School Of Friendship',
+    description: 'Designed, built, tested, presented, and documented a full stack React componentized website with Typescript and Tailwind, gathering data through different methods and setups of interchangeable GraphQL Schema Federation super and subgraphs, fully Dockerized, AWS, using Opentelemetry.',
     image: pushpayImg,
     images: [
       apollo,
@@ -92,9 +91,9 @@ export const projects = [
   },
   {
     id: '2',
-    title: 'WedPro',
+    title: 'WedPro Web App',
     description:
-      'Built a bunch of features for this wonderful startups web application for wedding planning, built with an entirely new to me stack: Filament, Laragon, Laravel, PHP, Tailwind, Vue.js',
+      'I assisted with building a feature roadmap, designed, built, and tested new features from the backlog to implement subscriptions and add new UI`s on this exciting new kiwi SaaS startups wedding planning app. synchronously learning the new skills involved.',
     image: wedProImg,
     images: [
       canva,
@@ -120,7 +119,7 @@ export const projects = [
   },
   {
     id: '3',
-    title: 'OOTD',
+    title: 'OOTD IOS App',
     description:
       'A native app for Wardrobe management and sharing, My team learnt and made this in a week as my final project from my time in Dev Academy with React Native and Expo, We had previously only used classic React with TSX, so this was a exciting new challenge.',
     image: ootdImg,
@@ -141,9 +140,9 @@ export const projects = [
   },
   {
     id: '4',
-    title: 'Dev Academy',
+    title: 'Dev Academy Projects',
     description:
-      'An intensive 15-week immersive full stack web development bootcamp, Hands-on challenges, both independently and collaboratively, through group and pair programming sessions. React, TypeScript and many more, focusing on real-world development scenarios. Practiced extensively in Unit Testing, Test Driven Development, Asynchronous Programming Techniques, RESTful APIs, and Git. Emphasized soft skills, empathy, and well-being, learning meditation and integrating agile methodologies into team projects, providing and receiving growth-oriented feedback. Approximately 900 hours of coding',
+      'The equivalent of six months of coding in an intensive four-month immersive full-stack web development boot camp working in real-world development scenarios. We practiced extensively in unit testing, test-driven development, asynchronous programming techniques, RESTful APIs, and Git. We completed hands-on challenges, both independently and collaboratively, through group and pair programming sessions. We exercised soft skills, empathy, and well-being, learning meditation and integrating agile methodologies into team projects.',
     image: devAcademyImg,
     images: [
       docker,
@@ -171,9 +170,9 @@ export const projects = [
   },
   {
     id: '5',
-    title: 'Portfolio',
+    title: 'Portfolio SPA',
     description:
-      'This website, and its many versions. As normal it is a work in progress, taking my time to perfect it around my other work projects but I am proud of it. I have learnt a lot about React, TypeScript, and CSS in the process of making it.',
+      'This website, and its many versions. As usual it is a work in progress, taking my time to perfect it around my other work projects. Inspired by my childhood pc games and Googles Martial Design.',
     image: portfolioImg,
     images: [
       canva,
