@@ -2,9 +2,9 @@ import apollo from '../Images/Skills/apollo.png'
 import artRage from '../Images/Skills/artRage.png'
 import aws from '../Images/Skills/aws.png'
 import canva from '../Images/Skills/canva.png'
-// import chilliCreme from '../Images/Skills/chilliCreme.png'
+import chilliCreme from '../Images/Skills/chilliCreme.png'
 import clipStudioPaint from '../Images/Skills/clipStudioPaint.png'
-import conflunece from '../Images/Skills/confluence.png'
+import confluence from '../Images/Skills/confluence.png'
 import csharp from '../Images/Skills/csharp.png'
 import docker from '../Images/Skills/docker.png'
 import dotNet from '../Images/Skills/dotNet.png'
@@ -47,8 +47,7 @@ import vsCode from '../Images/Skills/vsCode.png'
 import vueJs from '../Images/Skills/vueJs.png'
 import yarn from '../Images/Skills/yarn.png'
 
-const images = [
-  // These are in a certain order to make the marquee animation look good and to keep context for the items grouped together
+const images: { [key: string]: string } = {
   clipStudioPaint,
   mediBangPaint,
   artRage,
@@ -85,36 +84,86 @@ const images = [
   filament,
   graphql,
   apollo,
-  // chilliCreme,
+  chilliCreme,
   hotChoc,
   openTel,
   jira,
   gitHubDesktop,
   vsCode,
   gitHub,
-  conflunece,
+  confluence,
   notion,
   csharp,
   dotNet,
   aws,
+}
+const orderedKeys: (keyof typeof images)[] = [
+  'clipStudioPaint',
+  'mediBangPaint',
+  'artRage',
+  'sketchbook',
+  'google',
+  'gmail',
+  'canva',
+  'figma',
+  'sass',
+  'tailwind',
+  'html5',
+  'js',
+  'typescript',
+  'reactJs',
+  'vueJs',
+  'node',
+  'expressJs',
+  'knex',
+  'reactNative',
+  'expo',
+  'vitest',
+  'storybook',
+  'vite',
+  'npm',
+  'yarn',
+  'jenkins',
+  'docker',
+  'firebase',
+  'sql',
+  'sqLite',
+  'mySqlWorkbench',
+  'laravel',
+  'laragon',
+  'filament',
+  'graphql',
+  'apollo',
+  'chilliCreme',
+  'hotChoc',
+  'openTel',
+  'jira',
+  'gitHubDesktop',
+  'vsCode',
+  'gitHub',
+  'confluence',
+  'notion',
+  'csharp',
+  'dotNet',
+  'aws',
 ]
 
-function SkillsBox() {
+export default function SkillsBox() {
   return (
     <div className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-3 md:p-6 lg:p-8 xl:p-10 relative overflow-hidden">
       <div className="flex space-x-6 animate-marquee">
-        {images.concat(images).map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt={`Skill icon ${index}`}
-            className="w-12 h-auto"
-            loading="lazy"
-          />
-        ))}
+        {orderedKeys.flatMap((key, index) =>
+          images[key] ? (
+            <img
+              key={index}
+              src={images[key]}
+              alt={`Skill icon ${key}`}
+              className="w-12 h-auto"
+              loading="lazy"
+            />
+          ) : null,
+        )}
       </div>
     </div>
   )
 }
-
-export default SkillsBox
