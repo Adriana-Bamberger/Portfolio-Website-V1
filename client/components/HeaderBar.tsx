@@ -34,7 +34,7 @@ function HeaderBar() {
       alt: 'Good Reads Icon (Black and White)',
     },
     {
-      href: 'https://docs.google.com/document/d/1al2RwS5lTxIrzVs8SO3p2OFJtRjASlwtRKp2j0C6E88/edit?usp=sharing',
+      href: 'https://drive.google.com/file/d/1zKdMc74bOFudtnohyqn8d8V4P8fGvDao/view?usp=sharing',
       src: DownloadCV,
       alt: 'Download CV',
     },
