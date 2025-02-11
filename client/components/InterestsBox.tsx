@@ -4,10 +4,16 @@ import { InterestsData } from './InterestsData'
 export default function InterestsBox() {
   return (
     <div className="mx-auto my-5 max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm p-6 shadow-md text-center mb-6">
+      <div
+        data-aos="fade-up"
+        className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm p-6 shadow-md text-center mb-6"
+      >
         <h2 className="text-2xl font-bold">Interests</h2>
       </div>
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
+      <div
+        data-aos="fade-up"
+        className="columns-1 sm:columns-2 lg:columns-3 gap-6"
+      >
         {InterestsData.map((interest, index) => (
           <div
             key={index}
