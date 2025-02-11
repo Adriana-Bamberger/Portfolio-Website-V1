@@ -2,11 +2,10 @@
 https://adriana.bamberger.nz/
 
 ## Status
-Currently a WIP. Some content is yet to be added. 
-Currently moving everything from raw scss to tailwind css
+Currently a WIP. Creating the tablet and cellphone-size media styling.
 
 ## Learning Objectives
-I am exploring more UI design, motion, and 3D Graphics.
+I am exploring more UI design principles, animations, motion, and 3D Graphics.
 
 ## Technologies and Skills Experimented With So Far
 - Benchmarking
@@ -26,9 +25,9 @@ I am exploring more UI design, motion, and 3D Graphics.
 - Vite
 - WSL
 - Tailwind
+- Packages
 
 ## Stretch Ideas
-- Component animation on scroll
 - Movement in the 3D avatar
-- Component transformations on click.
-- animated background
+- Component animated transformations on click.
+- Animated 3D background
