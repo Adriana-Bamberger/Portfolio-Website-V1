@@ -24,6 +24,7 @@
   "license": "ISC",
   "devDependencies": {
     "@devacademy/eslint-config": "^1.10.1",
+    "@types/aos": "^3.0.7",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
@@ -54,6 +55,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "aos": "^2.3.4",
     "sass": "^1.79.5"
   }
 }

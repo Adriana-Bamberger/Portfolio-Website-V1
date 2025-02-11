@@ -1,4 +1,3 @@
-// Imports
 import ProjectsCards from './ProjectCards'
 
 function ProjectsBox() {
