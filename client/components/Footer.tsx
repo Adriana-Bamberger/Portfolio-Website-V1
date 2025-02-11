@@ -29,7 +29,10 @@ const Footer: React.FC = () => {
   ]
 
   return (
-    <div className="text-2xl font-semibold bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-3 md:p-3 lg:p-3 xl:p-3">
+    <div
+      data-aos="fade-up"
+      className="text-2xl font-semibold bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-3 md:p-3 lg:p-3 xl:p-3"
+    >
       <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
         {/* Social Icons Left */}
         <div className="flex space-x-4">
