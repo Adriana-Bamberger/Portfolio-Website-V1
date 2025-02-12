@@ -16,7 +16,7 @@ function HeroBox() {
                 {' '}
                 I&apos;m a kiwi web developer who loves to code, design, and
                 solve problems as much as I love stitching together creative
-                projects - and trust me, I&apos;ve sewn up plenty!
+                projects - and I&apos;ve sewn up plenty!
                 <br /> Before web development, I ran my own professional
                 costuming business, so bringing ideas to life is kind of my
                 thing.
