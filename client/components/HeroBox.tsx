@@ -6,7 +6,7 @@ function HeroBox() {
       <div className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-3 lg:mx-10 my-5 p-6 md:p-8 lg:p-10 xl:p-12">
         <div className="flex flex-row justify-center items-center">
           <div className="relative flex flex-col md:flex-row justify-between items-center">
-            <div className="flex flex-col space-y-2 mr-48">
+            <div className="flex flex-col space-y-2 mr-0 md:mr-48">
               <p className="text-xl">
                 <b>
                   <em>Kia ora! Hallo! Hiya! </em>
@@ -33,7 +33,7 @@ function HeroBox() {
               src={img}
               alt="cartoon drawing of adriana by adriana"
               loading="lazy"
-              className="absolute right-8 translate-y-1/4 max-w-xs max-h-96 md:max-w-xs lg:max-w-sm"
+              className="hidden md:block absolute right-8 translate-y-1/4 max-w-xs max-h-96 md:max-w-xs lg:max-w-sm"
             />
           </div>
         </div>
