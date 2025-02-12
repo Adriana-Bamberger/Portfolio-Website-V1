@@ -70,7 +70,7 @@ export default function Footer() {
 
       {/* The Mobile Styling */}
       <div className="md:hidden">
-        <div className="text-2xl font-semibold bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-3 md:p-3 lg:p-3 xl:p-3">
+        <div className="text-2xl font-semibold bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-3 lg:mx-10 my-5 p-3 md:p-3 lg:p-3 xl:p-3">
           <div className="flex flex-col items-center sm:mx-8">
             <div className="text-center mb-4">
               <p className="text-sm">

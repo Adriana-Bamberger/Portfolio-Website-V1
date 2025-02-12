@@ -9,7 +9,7 @@ function ProjectsCards() {
         <div
           key={project.id}
           data-aos="fade-up"
-          className={`bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-6 md:p-8 lg:p-10 xl:p-12 flex ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}
+          className={`bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-3 lg:mx-10 my-5 p-6 md:p-8 lg:p-10 xl:p-12 flex ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}
         >
           <img
             src={project.image}

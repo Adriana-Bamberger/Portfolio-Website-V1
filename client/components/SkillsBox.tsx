@@ -152,7 +152,7 @@ export default function SkillsBox() {
   return (
     <div
       data-aos="fade-up"
-      className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-3 md:p-6 lg:p-8 xl:p-10 relative overflow-hidden"
+      className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-3 lg:mx-10 my-5 p-3 md:p-6 lg:p-8 xl:p-10 relative overflow-hidden"
     >
       <div className="flex space-x-6 animate-marquee">
         {orderedKeys.flatMap((key, index) =>
