@@ -1,3 +1,4 @@
+import React, { useRef, useState, useEffect } from 'react'
 import apollo from '../public/Images/Skills/apollo.png'
 import artRage from '../public/Images/Skills/artRage.png'
 import aws from '../public/Images/Skills/aws.png'
@@ -149,23 +150,52 @@ const orderedKeys: (keyof typeof images)[] = [
 ]
 
 export default function SkillsBox() {
+  const firstCopyRef = useRef<HTMLDivElement>(null)
+  const [scrollDistance, setScrollDistance] = useState(0)
+
+  useEffect(() => {
+    if (firstCopyRef.current) {
+      setScrollDistance(firstCopyRef.current.offsetWidth)
+    }
+  }, [])
+
   return (
     <div
       data-aos="fade-up"
-      className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-3 lg:mx-10 my-5 p-3 md:p-6 lg:p-8 xl:p-10 relative overflow-hidden"
+      className="relative overflow-hidden bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-3 lg:mx-10 my-5 p-3 md:p-6 lg:p-8 xl:p-10 "
+      style={
+        { '--scroll-distance': `${scrollDistance}px` } as React.CSSProperties
+      }
     >
-      <div className="flex space-x-6 animate-marquee">
-        {orderedKeys.flatMap((key, index) =>
-          images[key] ? (
-            <img
-              key={index}
-              src={images[key]}
-              alt={`Skill icon ${key}`}
-              className="w-12 h-auto"
-              loading="lazy"
-            />
-          ) : null,
-        )}
+      <div className="whitespace-nowrap">
+        <div className="flex animate-marquee">
+          <div ref={firstCopyRef} className="flex flex-none space-x-6">
+            {orderedKeys.map((key, index) =>
+              images[key] ? (
+                <img
+                  key={index}
+                  src={images[key]}
+                  alt={`Skill icon ${key}`}
+                  className="w-9 h-auto lg:w-12"
+                  loading="lazy"
+                />
+              ) : null,
+            )}
+          </div>
+          <div className="flex flex-none space-x-6">
+            {orderedKeys.map((key, index) =>
+              images[key] ? (
+                <img
+                  key={index + orderedKeys.length}
+                  src={images[key]}
+                  alt={`Skill icon ${key}`}
+                  className="w-9 h-auto lg:w-12"
+                  loading="lazy"
+                />
+              ) : null,
+            )}
+          </div>
+        </div>
       </div>
     </div>
   )
