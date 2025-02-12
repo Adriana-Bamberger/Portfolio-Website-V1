@@ -3,10 +3,10 @@ import img from '../public/Images/Advertars/3D-Advtar.png'
 function HeroBox() {
   return (
     <>
-      <div className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 p-6 md:p-8 lg:p-10 xl:p-12">
+      <div className="bg-white bg-opacity-10 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-3 lg:mx-10 my-5 p-6 md:p-8 lg:p-10 xl:p-12">
         <div className="flex flex-row justify-center items-center">
           <div className="relative flex flex-col md:flex-row justify-between items-center">
-            <div className="flex flex-col space-y-2 mr-48">
+            <div className="flex flex-col space-y-2 mr-0 md:mr-48">
               <p className="text-xl">
                 <b>
                   <em>Kia ora! Hallo! Hiya! </em>
@@ -16,7 +16,7 @@ function HeroBox() {
                 {' '}
                 I&apos;m a kiwi web developer who loves to code, design, and
                 solve problems as much as I love stitching together creative
-                projects - and trust me, I&apos;ve sewn up plenty!
+                projects - and I&apos;ve sewn up plenty!
                 <br /> Before web development, I ran my own professional
                 costuming business, so bringing ideas to life is kind of my
                 thing.
@@ -33,7 +33,7 @@ function HeroBox() {
               src={img}
               alt="cartoon drawing of adriana by adriana"
               loading="lazy"
-              className="absolute right-8 translate-y-1/4 max-w-xs max-h-96 md:max-w-xs lg:max-w-sm"
+              className="hidden md:block absolute right-8 translate-y-1/4 max-w-xs max-h-96 md:max-w-xs lg:max-w-sm"
             />
           </div>
         </div>

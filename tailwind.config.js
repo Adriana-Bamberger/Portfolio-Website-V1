@@ -18,6 +18,7 @@ export default {
         clr9: '#E6E6E6',
         clr10: '#ffffff',
         clr11: '#1E1E1E',
+        clr12: '#7A7A7A',
       },
       backgroundImage: {
         'background-large':
@@ -30,12 +31,14 @@ export default {
           "url('/client/public/Images/Background/background-extra-large.png')",
       },
       animation: {
-        marquee: 'marquee 20s linear infinite',
+        marquee: 'marquee 40s linear infinite',
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '100%': {
+            transform: 'translateX(calc(-1 * var(--scroll-distance)))',
+          },
         },
       },
     },
