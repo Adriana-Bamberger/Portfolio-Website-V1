@@ -18,6 +18,7 @@ export default {
         clr9: '#E6E6E6',
         clr10: '#ffffff',
         clr11: '#1E1E1E',
+        clr12: '#7A7A7A',
       },
       backgroundImage: {
         'background-large':

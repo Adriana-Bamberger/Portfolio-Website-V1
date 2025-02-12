@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from 'react'
 import SocialIcon from './SocialIcon'
 import Github from '../public/Images/Social Icons/github-logo.png'
 import Linkedin from '../public/Images/Social Icons/linkedin.png'
@@ -6,7 +7,10 @@ import StackOverflow from '../public/Images/Social Icons/stack-overflow.png'
 import GoodReads from '../public/Images/Social Icons/goodReads.png'
 import DownloadCV from '../public/Images/Social Icons/CV-Download-Icon-white.png'
 
-function HeaderBar() {
+export default function HeaderBar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+
   const socialLinks = [
     {
       href: 'https://github.com/Adriana-Bamberger',
@@ -39,14 +43,53 @@ function HeaderBar() {
       alt: 'Download CV',
     },
   ]
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false)
+      }
+    }
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [menuOpen])
+
   return (
-    <div className="bg-white bg-opacity-20 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-10 my-5 px-7 py-3 flex justify-between items-center md:mx-6 md:my-4 lg:mx-8 lg:my-6 xl:mx-10 xl:my-8 2xl:mx-12 2xl:my-10">
-      <span>
-        <h1 className="font-semibold text-2xl">
-          Adriana Bamberger | Portfolio
-        </h1>
-      </span>
-      <div className="flex gap-2 md:gap-4">
+    <div className="relative z-50 bg-white bg-opacity-20 border border-white border-opacity-0 rounded-custom backdrop-blur-sm mx-3 lg:mx-10 my-5 px-7 py-3 flex justify-between items-center">
+      <h1 className="font-semibold text-2xl md:hidden">
+        Adriana Bamberger Portfolio
+      </h1>
+      <h1 className="font-semibold text-2xl hidden md:block">
+        Adriana Bamberger | Portfolio
+      </h1>
+
+      <div className="relative md:hidden">
+        <button onClick={() => setMenuOpen(!menuOpen)}>
+          <img src={DownloadCV} alt="Menu" className="w-8 h-8" />
+        </button>
+
+        {menuOpen && (
+          <div
+            ref={menuRef}
+            className="absolute top-full right-0 mt-2 bg-clr12 bg-opacity-90 backdrop-blur-md shadow-md rounded-custom p-4 flex flex-col gap-4 z-10"
+          >
+            {socialLinks.map((link) => (
+              <SocialIcon
+                key={link.href}
+                href={link.href}
+                src={link.src}
+                alt={link.alt}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div className="hidden md:flex gap-2">
         {socialLinks.map((link) => (
           <SocialIcon
             key={link.href}
@@ -59,5 +102,3 @@ function HeaderBar() {
     </div>
   )
 }
-
-export default HeaderBar
