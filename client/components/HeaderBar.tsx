@@ -6,12 +6,13 @@ import Instagram from '../public/Images/Social Icons/instagram.png'
 import StackOverflow from '../public/Images/Social Icons/stack-overflow.png'
 import GoodReads from '../public/Images/Social Icons/goodReads.png'
 import DownloadCV from '../public/Images/Social Icons/CV-Download-Icon-white.png'
+import { SocialLink } from './Types'
 
 export default function HeaderBar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
 
-  const socialLinks = [
+  const socialLinks: SocialLink[] = [
     {
       href: 'https://github.com/Adriana-Bamberger',
       src: Github,
