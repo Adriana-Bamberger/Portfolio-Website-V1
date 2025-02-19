@@ -3,7 +3,7 @@ import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid'
 import { ExperienceData } from './ExperienceData.ts'
 import { Experience } from './Types.ts'
 
-function ExperienceBox() {
+export default function ExperienceBox() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const toggleActiveIndex = (index: number) => {
@@ -45,5 +45,3 @@ function ExperienceBox() {
     </div>
   )
 }
-
-export default ExperienceBox
