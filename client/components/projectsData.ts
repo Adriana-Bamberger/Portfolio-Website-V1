@@ -48,8 +48,9 @@ import vitest from '../public/Images/Skills/vitest.png'
 import vsCode from '../public/Images/Skills/vsCode.png'
 import vueJs from '../public/Images/Skills/vueJs.png'
 import yarn from '../public/Images/Skills/yarn.png'
+import { Project } from './Types'
 
-export const projects = [
+export const projects: Project[] = [
   {
     id: '1',
     title: 'Pushpay - School Of Friendship',
