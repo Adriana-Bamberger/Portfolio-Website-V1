@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { projects } from './projectsData'
+import { Project } from './Types'
 
 export default function ProjectsCards() {
   return (
     <div>
-      {projects.map((project, index) => (
+      {projects.map((project: Project, index: number) => (
         <div
           key={project.id}
           data-aos="fade-up"
