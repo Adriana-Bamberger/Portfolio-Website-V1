@@ -2,7 +2,7 @@
 https://adriana.bamberger.nz/
 
 ## Status
-Currently a WIP. Creating the tablet and cellphone-size media styling.
+Currently a WIP, Studying for the Streach Ideas.
 
 ## Learning Objectives
 I am exploring more UI design principles, animations, motion, and 3D Graphics.
