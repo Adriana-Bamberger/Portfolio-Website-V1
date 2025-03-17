@@ -1,8 +1,9 @@
 # Portfolio-Website
 https://adriana.bamberger.nz/
 
-## Status
-Currently a WIP, Studying for the Streach Ideas.
+![Status: Finished for Now](https://img.shields.io/badge/status-finished%20for%20now-green)
+
+This will always be WIP, studying for the stretch ideas.
 
 ## Learning Objectives
 I am exploring more UI design principles, animations, motion, and 3D Graphics.
@@ -26,6 +27,7 @@ I am exploring more UI design principles, animations, motion, and 3D Graphics.
 - WSL
 - Tailwind
 - Packages
+- Scroll Animations
 
 ## Stretch Ideas
 - Movement in the 3D avatar
