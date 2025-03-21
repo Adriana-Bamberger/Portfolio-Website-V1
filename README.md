@@ -3,7 +3,7 @@ https://adriana.bamberger.nz/
 
 ![Status: Finished for Now](https://img.shields.io/badge/status-finished%20for%20now-green)
 
-This will always be WIP, studying for the stretch ideas.
+This will always be WIP, studying for the stretch and other ideas.
 
 ## Learning Objectives
 I am exploring more UI design principles, animations, motion, and 3D Graphics.
