@@ -169,7 +169,7 @@ export const projects: Project[] = [
     id: '5',
     title: 'Portfolio SPA',
     description:
-      'This website, and its many versions. As usual it is a work in progress, taking my time to perfect it around my other work projects. Inspired by my childhood pc games and Googles Martial Design.',
+      'This website, and its many versions. As usual it is a work in progress, taking my time to perfect it around my other work projects. Inspired by my childhood pc games and Googles Material Design.',
     image: portfolioImg,
     images: [
       canva,
